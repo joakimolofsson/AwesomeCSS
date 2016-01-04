@@ -1,0 +1,4216 @@
+/*Created by Joakim Olofsson*/
+
+
+
+
+/*
+HTML:
+<div class="borderBottomOpacity">
+    <a href="">Awesome</a>
+</div>
+*/
+.borderBottomOpacity {
+    position: relative;
+    background: ;/*Change the color of the background here*/
+    padding: ;/*Change the space around the text here*/
+}
+
+.borderBottomOpacity a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+}
+
+.borderBottomOpacity:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;/*Change the height of the border here*/
+    background: #fff;/*Change the color of the border here*/
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: all 0.5s ease-in-out;/*Change the animation time and animation ease here*/
+            transition: all 0.5s ease-in-out;/*Change the animation time and animation ease here*/
+}
+
+.borderBottomOpacity:hover:before {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+
+
+
+
+
+
+
+
+
+/*
+HTML:
+<div class="borderBottomOpacitySlideUp">
+    <a href="">Awesome</a>
+</div>
+*/
+.borderBottomOpacitySlideUp {
+    position: relative;
+    background: ;/*Change the color of the background here*/
+    padding: ;/*Change the space around the text here*/
+}
+
+.borderBottomOpacitySlideUp a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+}
+
+.borderBottomOpacitySlideUp:before {
+    content: '';
+    position: absolute;
+    bottom: -6px;/*Change the border start position here*/
+    left: 0;
+    width: 100%;
+    height: 2px;/*Change the height of the border here*/
+    background: #fff;/*Change the color of the border here*/
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: all 0.5s ease;/*Change the animation time and animation ease here*/
+            transition: all 0.5s ease;/*Change the animation time and animation ease here*/
+}
+
+.borderBottomOpacitySlideUp:hover:before {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    bottom: 0;/*Change the border end position here*/
+}
+
+
+
+
+
+
+
+
+
+
+/*
+HTML:
+<div class="borderTopBottomSlideUpDownOpacity">
+    <a href="">Awesome</a>
+</div>
+*/
+.borderTopBottomSlideUpDownOpacity {
+    position: relative;
+    background: ;/*Change the color of the background here*/
+    padding: ;/*Change the space around the text here*/
+}
+
+.borderTopBottomSlideUpDownOpacity a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+}
+
+.borderTopBottomSlideUpDownOpacity:before, .borderTopBottomSlideUpDownOpacity:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;/*Change the height of both border here*/
+    background: #fff;/*Change the color of both border here*/
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: all 0.5s ease;/*Change the animation time and animation ease here*/
+            transition: all 0.5s ease;/*Change the animation time and animation ease here*/
+}
+
+.borderTopBottomSlideUpDownOpacity:before {
+    top: -6px;/*Change the border start position here*/
+}
+
+.borderTopBottomSlideUpDownOpacity:after {
+    bottom: -6px;/*Change the border start position here*/
+}
+
+.borderTopBottomSlideUpDownOpacity:hover:before {
+    top: 0;/*Change the border end position here*/
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.borderTopBottomSlideUpDownOpacity:hover:after {
+    bottom: 0;/*Change the border end position here*/
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+
+
+
+
+
+
+
+
+
+/*
+HTML:
+<div class="borderSidesHorizontalSlide">
+    <a href="">Awesome</a>
+</div>
+*/
+.borderSidesHorizontalSlide {
+    position: relative;
+    background: ;/*Change the color of the background here*/
+    padding: ;/*Change the space around the text here*/
+}
+
+.borderSidesHorizontalSlide a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+}
+
+.borderSidesHorizontalSlide:before, .borderSidesHorizontalSlide:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 2px;/*Change the width of both border here*/
+    height: 100%;
+    background: #fff;/*Change the color of both border here*/
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: all 0.5s ease;/*Change the animation time and animation ease here*/
+            transition: all 0.5s ease;/*Change the animation time and animation ease here*/
+}
+
+.borderSidesHorizontalSlide:before {
+    left: -14px;/*Change the border start position here*/
+}
+
+.borderSidesHorizontalSlide:after {
+    right: -14px;/*Change the border start position here*/
+}
+
+.borderSidesHorizontalSlide:hover:before {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    left: -7px;/*Change the border end position here*/
+}
+
+.borderSidesHorizontalSlide:hover:after {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    right: -7px;/*Change the border end position here*/
+}
+
+
+
+
+
+
+
+
+
+
+/*
+HTML:
+<div class="borderBottomSlide">
+    <a href="">Awesome</a>
+</div>
+*/
+.borderBottomSlide {
+    position: relative;
+    overflow: hidden;
+    background: ;/*Change the color of the background here*/
+    padding: ;/*Change the space around the text here*/
+}
+
+.borderBottomSlide a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+}
+
+.borderBottomSlide:before {
+    content: '';
+    position: absolute;
+    right: 100%;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+}
+
+.borderBottomSlide:hover:before {
+    right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+HTML:
+<div class="borderTopBottomSlide">
+    <a href="">Awesome</a>
+</div>
+*/
+.borderTopBottomSlide {
+    position: relative;
+    overflow: hidden;
+    background: ;/*Change the color of the background here*/
+    padding: ;/*Change the space around the text here*/
+}
+
+.borderTopBottomSlide a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+}
+
+.borderTopBottomSlide:before, .borderTopBottomSlide:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+}
+
+.borderTopBottomSlide:before {
+    top: 0;
+    right: 100%;
+}
+
+.borderTopBottomSlide:after {
+    bottom: 0;
+    left: 100%;
+}
+
+.borderTopBottomSlide:hover:before {
+    right: 0;
+}
+
+.borderTopBottomSlide:hover:after {
+    left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+HTML:
+<div class="borderBottomExpand">
+    <a href="">Awesome</a>
+</div>
+*/
+.borderBottomExpand {
+    width: auto;
+    height: auto;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background: ;/*Change the color of the background here*/
+    padding: ;/*Change the space around the text here*/
+}
+
+.borderBottomExpand a {
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+    display: block;
+    line-height: 28px;
+}
+
+.borderBottomExpand:before, .borderBottomExpand:after {
+    content: '';
+    width: 50%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    background: #fff;
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+}
+
+.borderBottomExpand:before {
+    left: 0;
+    -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: right;
+        -ms-transform-origin: right;
+            transform-origin: right;
+}
+
+.borderBottomExpand:after {
+    right: 1px;
+    -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: left;
+        -ms-transform-origin: left;
+            transform-origin: left;
+}
+
+.borderBottomExpand:hover:before, .borderBottomExpand:hover:after  {
+    -webkit-transform: scaleX(1.1);
+        -ms-transform: scaleX(1.1);
+            transform: scaleX(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+/*
+HTML:
+<div class="borderLeftRightSlideUpDown">
+    <a href="">Awesome</a>
+</div>
+*/
+.borderLeftRightSlideUpDown {
+    position: relative;
+    overflow: hidden;
+    padding: 0 7px 0 7px;/*Change the space around the text here*/
+    background: ;/*Change the color of the background here*/
+}
+
+.borderLeftRightSlideUpDown a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+}
+
+.borderLeftRightSlideUpDown:before, .borderLeftRightSlideUpDown:after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background: #fff;
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+}
+
+.borderLeftRightSlideUpDown:before {
+    bottom: 100%;
+    left: 0;
+}
+
+.borderLeftRightSlideUpDown:after {
+    top: 100%;
+    right: 0;
+}
+
+.borderLeftRightSlideUpDown:hover:before {
+    bottom: 0;
+}
+
+.borderLeftRightSlideUpDown:hover:after {
+    top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+HTML:
+<div class="borderCornerSlide">
+    <div class="top"></div>
+    <a href="">Awesome</a>
+    <div class="bottom"></div>
+</div>
+*/
+.borderCornerSlide {
+    position: relative;
+    overflow: hidden;
+    padding: 0 7px 0 7px;
+    background: ;/*Change the color of the background here*/
+    padding: ;/*Change the space around the text here*/
+}
+
+.borderCornerSlide a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+}
+
+.borderCornerSlide .top, .borderCornerSlide .bottom {
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #fff;
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+}
+
+.borderCornerSlide .top {
+    top: 0;
+    right: 100%;
+}
+
+.borderCornerSlide .bottom {
+    bottom: 0;
+    left: 100%;
+}
+
+.borderCornerSlide:hover .top {
+    right: 0;
+}
+
+.borderCornerSlide:hover .bottom {
+    left: 0;
+}
+
+.borderCornerSlide:before, .borderCornerSlide:after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background: #fff;
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+}
+
+.borderCornerSlide:before {
+    bottom: 100%;
+    left: 0;
+}
+
+.borderCornerSlide:after {
+    top: 100%;
+    right: 0;
+}
+
+.borderCornerSlide:hover:before {
+    bottom: 0;
+}
+
+.borderCornerSlide:hover:after {
+    top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+HTML:
+<div class="borderLazers">
+    <div class="top"></div>
+    <a href="">Awesome</a>
+    <div class="bottom"></div>
+</div>
+*/
+.borderLazers {
+    position: relative;
+    overflow: hidden;
+    padding: 0 7px 0 7px;
+}
+
+.borderLazers a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+}
+
+.borderLazers .top, .borderLazers .bottom, .borderLazers:before, .borderLazers:after {
+    position: absolute;
+    background: #fff;
+}
+
+.borderLazers .top, .borderLazers .bottom {
+    height: 2px;
+    width: 100%;
+}
+.borderLazers:before, .borderLazers:after {
+    content: '';
+    height: 100%;
+    width: 2px;
+}
+
+.borderLazers .top {
+    top: 0;
+    left: 100%;
+}
+.borderLazers .bottom {
+    bottom: 0;
+    right: 100%;
+}
+.borderLazers:before {
+    top: -100%;
+    left: 0;
+}
+.borderLazers:after {
+    bottom: -100%;
+    right: 0;
+}
+
+.borderLazers:hover .bottom {
+    -webkit-animation: borderLazersBottom 0.7s infinite;
+            animation: borderLazersBottom 0.7s infinite;
+}
+@-webkit-keyframes borderLazersBottom {
+    100% {
+        right: -100%;
+    }
+}
+@keyframes borderLazersBottom {
+    100% {
+        right: -100%;
+    }
+}
+.borderLazers:hover:after {
+    -webkit-animation: borderLazersAfter 0.7s infinite;
+            animation: borderLazersAfter 0.7s infinite;
+}
+@-webkit-keyframes borderLazersAfter {
+    100% {
+        bottom: 100%;
+    }
+}
+@keyframes borderLazersAfter {
+    100% {
+        bottom: 100%;
+    }
+}
+.borderLazers:hover .top {
+    -webkit-animation: borderLazersTop 0.7s infinite;
+            animation: borderLazersTop 0.7s infinite;
+}
+@-webkit-keyframes borderLazersTop {
+    100% {
+        left: -100%;
+    }
+}
+@keyframes borderLazersTop {
+    100% {
+        left: -100%;
+    }
+}
+.borderLazers:hover:before {
+    -webkit-animation: borderLazersBefore 0.7s infinite;
+            animation: borderLazersBefore 0.7s infinite;
+}
+@-webkit-keyframes borderLazersBefore {
+    100% {
+        top: 100%;
+    }
+}
+@keyframes borderLazersBefore {
+    100% {
+        top: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*
+HTML:
+<div class="borderBottomInfiniteSlide">
+    <a href="">Awesome</a>
+</div>
+*/
+.borderBottomInfiniteSlide {
+    position: relative;
+    overflow: hidden;
+    background: ;/*Change the color of the background here*/
+    padding: ;/*Change the space around the text here*/
+}
+
+.borderBottomInfiniteSlide a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+}
+
+.borderBottomInfiniteSlide:before {
+    content: '';
+    position: absolute;
+    left: -100%;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: #fff;
+}
+
+.borderBottomInfiniteSlide:hover:before {
+    -webkit-animation: borderBottomInfiniteSlide 1s ease-in-out infinite;
+            animation: borderBottomInfiniteSlide 1s ease-in-out infinite;
+}
+@-webkit-keyframes borderBottomInfiniteSlide {
+    80% {
+        left: 100%
+    }
+    80.1% {
+        left: -100%; 
+    }
+    100% {
+        left: -100%
+    }
+}
+@keyframes borderBottomInfiniteSlide {
+    80% {
+        left: 100%
+    }
+    80.1% {
+        left: -100%; 
+    }
+    100% {
+        left: -100%
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*
+HTML:
+<div class="borderBottomSlideRightLeft">
+    <a href="">Awesome</a>
+</div>
+*/
+.borderBottomSlideRightLeft {
+    position: relative;
+    overflow: hidden;
+    background: ;/*Change the color of the background here*/
+    padding: ;/*Change the space around the text here*/
+}
+
+.borderBottomSlideRightLeft a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+}
+
+.borderBottomSlideRightLeft:before {
+    content: '';
+    position: absolute;
+    left: -100%;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: #fff;
+}
+
+.borderBottomSlideRightLeft:hover:before {
+    -webkit-animation: borderBottomSlideRightLeft 1.5s ease-in-out infinite;
+            animation: borderBottomSlideRightLeft 1.5s ease-in-out infinite;
+}
+@-webkit-keyframes borderBottomSlideRightLeft {
+    
+    50% {
+        left: 100%;
+    }
+}
+@keyframes borderBottomSlideRightLeft {
+    
+    50% {
+        left: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*
+HTML:
+<div class="textRotateY">
+    <a href="">Awesome</a>
+</div>
+*/
+.textRotateY {
+    position: relative;
+    -webkit-perspective: 130px;
+            perspective: 130px;
+    background: ;/*Change the color of the background here*/
+    padding: ;/*Change the space around the text here*/
+}
+
+.textRotateY a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+    -webkit-transition: all 1s;
+            transition: all 1s;
+}
+
+.textRotateY:hover a {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+}
+
+
+
+
+
+
+
+
+
+
+/*
+HTML:
+<div class="textRotateX">
+    <a href="">Awesome</a>
+</div>
+*/
+.textRotateX {
+    position: relative;
+    -webkit-perspective: 130px;
+            perspective: 130px;
+    background: ;/*Change the color of the background here*/
+    padding: ;/*Change the space around the text here*/
+}
+
+.textRotateX a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+    -webkit-transition: all 1s;
+            transition: all 1s;
+}
+
+.textRotateX:hover a {
+    -webkit-transform: rotateX(360deg);
+            transform: rotateX(360deg);
+}
+
+
+
+
+
+
+
+
+
+
+/*
+HTML:
+<div class="textHalfRotateRight">
+    <a href="">Awesome</a>
+</div>
+*/
+.textHalfRotateRight {
+    position: relative;
+    -webkit-perspective: 150px;
+            perspective: 150px;
+    -webkit-perspective-origin: 10% 40%;
+            perspective-origin: 10% 40%;
+    background: ;/*Change the color of the background here*/
+    padding: ;/*Change the space around the text here*/
+}
+
+.textHalfRotateRight a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+    -webkit-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+}
+
+.textHalfRotateRight:hover a {
+    -webkit-transform: rotateY(35deg);
+            transform: rotateY(35deg);
+}
+
+
+
+
+
+
+
+
+
+
+/*
+HTML:
+<div class="textHalfRotateUp">
+    <a href="">Awesome</a>
+</div>
+*/
+.textHalfRotateUp {
+    position: relative;
+    -webkit-perspective: 50px;
+            perspective: 50px;
+    -webkit-perspective-origin: 50% 100%;
+            perspective-origin: 50% 100%;
+    background: ;/*Change the color of the background here*/
+    padding: ;/*Change the space around the text here*/
+}
+
+.textHalfRotateUp a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+    -webkit-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+    -webkit-transform-origin: 50% 50%;
+        -ms-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+}
+
+.textHalfRotateUp:hover a {
+    -webkit-transform: rotateX(30deg);
+            transform: rotateX(30deg);
+}
+
+
+
+
+
+
+
+
+
+
+/*
+HTML:
+<div class="textSkew3D">
+    <a href="">Awesome</a>
+</div>
+*/
+.textSkew3D {
+    position: relative;
+    -webkit-perspective: 100px;
+            perspective: 100px;
+    -webkit-perspective-origin: 0% 50%;
+            perspective-origin: 0% 50%;
+    background: ;/*Change the color of the background here*/
+    padding: ;/*Change the space around the text here*/
+}
+
+.textSkew3D a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+    -webkit-transform-origin: 50% 45%;
+        -ms-transform-origin: 50% 45%;
+            transform-origin: 50% 45%;
+}
+
+.textSkew3D:hover a {
+    -webkit-transform: rotateZ(-9deg) rotateX(-350deg) rotateY(10deg);
+            transform: rotateZ(-9deg) rotateX(-350deg) rotateY(10deg);
+}
+
+
+
+
+
+
+
+
+
+
+/*
+HTML:
+<div class="textBackside">
+    <div class="front">
+        <a href="">Awesome</a>
+    </div>
+    <div class="back">
+        <a href="">Woop Woop</a>
+    </div>
+</div>
+*/
+.textBackside {
+    position: relative;
+    -webkit-perspective: 150px;
+            perspective: 150px;
+    -webkit-perspective-origin: 50% 50%;
+            perspective-origin: 50% 50%;
+    background: ;/*Change the color of the background here*/
+    padding: ;/*Change the space around the text here*/
+}
+
+.textBackside a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+}
+
+.textBackside .front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-transition: all 0.7s;
+            transition: all 0.7s;
+}
+.textBackside .back {
+    width: 100%;
+    -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-transition: all 0.7s;
+            transition: all 0.7s;
+}
+
+.textBackside:hover .front {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+}
+.textBackside:hover .back {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+}
+
+
+
+
+
+
+
+
+
+
+/*
+HTML:
+<div class="textWiggle">
+    <a href="">Awesome</a>
+</div>
+*/
+.textWiggle {
+    position: relative;
+    background: ;/*Change the color of the background here*/
+    padding: ;/*Change the space around the text here*/
+}
+
+.textWiggle a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+}
+
+.textWiggle:hover a {
+    -webkit-animation: textWiggle 1s ease;
+            animation: textWiggle 1s ease;
+}
+
+@-webkit-keyframes textWiggle {
+    7% {
+        -webkit-transform: rotateZ(11deg);
+                transform: rotateZ(11deg);
+    }
+    14% {
+        -webkit-transform: rotateZ(-11deg);
+                transform: rotateZ(-11deg);
+    }
+    21% {
+        -webkit-transform: rotateZ(11deg);
+                transform: rotateZ(11deg);
+    }
+    28% {
+        -webkit-transform: rotateZ(-11deg);
+                transform: rotateZ(-11deg);
+    }
+    35% {
+        -webkit-transform: rotateZ(0deg);
+                transform: rotateZ(0deg);
+    }
+}
+
+@keyframes textWiggle {
+    7% {
+        -webkit-transform: rotateZ(11deg);
+                transform: rotateZ(11deg);
+    }
+    14% {
+        -webkit-transform: rotateZ(-11deg);
+                transform: rotateZ(-11deg);
+    }
+    21% {
+        -webkit-transform: rotateZ(11deg);
+                transform: rotateZ(11deg);
+    }
+    28% {
+        -webkit-transform: rotateZ(-11deg);
+                transform: rotateZ(-11deg);
+    }
+    35% {
+        -webkit-transform: rotateZ(0deg);
+                transform: rotateZ(0deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*
+HTML:
+<div class="textWiggleCrazy">
+    <a href="">Awesome</a>
+</div>
+*/
+.textWiggleCrazy {
+    position: relative;
+    -webkit-perspective: 150px;
+            perspective: 150px;
+    -webkit-perspective-origin: 50% 50%;
+            perspective-origin: 50% 50%;
+    background: ;/*Change the color of the background here*/
+    padding: ;/*Change the space around the text here*/
+}
+
+.textWiggleCrazy a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+}
+
+.textWiggleCrazy:hover a {
+    -webkit-animation: textWiggleCrazy 0.5s infinite;
+            animation: textWiggleCrazy 0.5s infinite;
+}
+
+@-webkit-keyframes textWiggleCrazy {
+    15% {
+        -webkit-transform: rotateZ(10deg) rotateY(50deg) rotateX(50deg);
+                transform: rotateZ(10deg) rotateY(50deg) rotateX(50deg);
+        -webkit-transform-origin: 0% 0%;
+                transform-origin: 0% 0%;
+    }
+    30% {
+        -webkit-transform: rotateZ(-15deg) rotateY(-50deg) rotateX(-20deg);
+                transform: rotateZ(-15deg) rotateY(-50deg) rotateX(-20deg);
+        -webkit-transform-origin: 0% 100%;
+                transform-origin: 0% 100%;
+    }
+    50% {
+        -webkit-transform: rotateZ(10deg) rotateY(50deg) rotateX(20deg);
+                transform: rotateZ(10deg) rotateY(50deg) rotateX(20deg);
+        -webkit-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+    }
+    60% {
+        -webkit-transform: rotateZ(-5deg) rotateY(50deg) rotateX(10deg);
+                transform: rotateZ(-5deg) rotateY(50deg) rotateX(10deg);
+        -webkit-transform-origin: 100% 0%;
+                transform-origin: 100% 0%;
+    }
+    75% {
+        -webkit-transform: rotateZ(15deg) rotateY(-50deg) rotateX(-50deg);
+                transform: rotateZ(15deg) rotateY(-50deg) rotateX(-50deg);
+        -webkit-transform-origin: 30% 60%;
+                transform-origin: 30% 60%;
+    }
+    90% {
+        -webkit-transform: rotateZ(5deg) rotateY(-20deg) rotateX(-20deg);
+                transform: rotateZ(5deg) rotateY(-20deg) rotateX(-20deg);
+        -webkit-transform-origin: 70% 80%;
+                transform-origin: 70% 80%;
+    }
+}
+
+@keyframes textWiggleCrazy {
+    15% {
+        -webkit-transform: rotateZ(10deg) rotateY(50deg) rotateX(50deg);
+                transform: rotateZ(10deg) rotateY(50deg) rotateX(50deg);
+        -webkit-transform-origin: 0% 0%;
+                transform-origin: 0% 0%;
+    }
+    30% {
+        -webkit-transform: rotateZ(-15deg) rotateY(-50deg) rotateX(-20deg);
+                transform: rotateZ(-15deg) rotateY(-50deg) rotateX(-20deg);
+        -webkit-transform-origin: 0% 100%;
+                transform-origin: 0% 100%;
+    }
+    50% {
+        -webkit-transform: rotateZ(10deg) rotateY(50deg) rotateX(20deg);
+                transform: rotateZ(10deg) rotateY(50deg) rotateX(20deg);
+        -webkit-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+    }
+    60% {
+        -webkit-transform: rotateZ(-5deg) rotateY(50deg) rotateX(10deg);
+                transform: rotateZ(-5deg) rotateY(50deg) rotateX(10deg);
+        -webkit-transform-origin: 100% 0%;
+                transform-origin: 100% 0%;
+    }
+    75% {
+        -webkit-transform: rotateZ(15deg) rotateY(-50deg) rotateX(-50deg);
+                transform: rotateZ(15deg) rotateY(-50deg) rotateX(-50deg);
+        -webkit-transform-origin: 30% 60%;
+                transform-origin: 30% 60%;
+    }
+    90% {
+        -webkit-transform: rotateZ(5deg) rotateY(-20deg) rotateX(-20deg);
+                transform: rotateZ(5deg) rotateY(-20deg) rotateX(-20deg);
+        -webkit-transform-origin: 70% 80%;
+                transform-origin: 70% 80%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*
+HTML:
+<div class="textSlideHori">
+    <a id="one" href="">Awesome</a>
+    <a id="two" href="">Awesome</a>
+</div>
+*/
+.textSlideHori {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background: ;/*Change the color of the background here*/
+    padding: ;/*Change the space around the text here*/
+}
+
+.textSlideHori a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+    -webkit-transition: all 0.7s ease-in-out;
+            transition: all 0.7s ease-in-out;
+}
+
+.textSlideHori #one {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.textSlideHori #two {
+    position: absolute;
+    top: 0;
+    left: 150%;
+}
+
+.textSlideHori:hover #one {
+    left: -150%;
+}
+
+.textSlideHori:hover #two {
+    left: 0%;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+HTML:
+<div class="textSlideVert">
+    <a id="one" href="">Awesome</a>
+    <a id="two" href="">Awesome</a>
+</div>
+*/
+.textSlideVert {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background: ;/*Change the color of the background here*/
+    padding: ;/*Change the space around the text here*/
+}
+
+.textSlideVert a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+    -webkit-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+}
+
+.textSlideVert #one {
+    position: relative;
+    top: 0;
+}
+
+.textSlideVert #two {
+    position: absolute;
+    top: 140%;
+}
+
+.textSlideVert:hover #one {
+    top: -29px;/*29px is the height of .textSlideVert. -100% don't seem to work here*/
+}
+
+.textSlideVert:hover #two {
+    top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+HTML:
+<div class="textSlideVertThree">
+    <a id="one" href="">Awesome</a>
+    <a id="two" href="">CSS</a>
+    <a id="three" href="">Awesome</a>
+</div>
+*/
+.textSlideVertThree {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background: ;/*Change the color of the background here*/
+    padding: ;/*Change the space around the text here*/
+}
+
+.textSlideVertThree a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+    -webkit-transition: all 0.6s ease-in-out;
+            transition: all 0.6s ease-in-out;
+}
+
+.textSlideVertThree #one {
+    position: relative;
+    top: 0;
+}
+
+.textSlideVertThree #two {
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+}
+
+.textSlideVertThree #three {
+    position: absolute;
+    top: 260%;
+}
+
+.textSlideVertThree:hover #one {
+    top: -58px;/*58px is the height of .textSlideVertThree * 2. -200% don't seem to work here*/
+}
+
+.textSlideVertThree:hover #two {
+    top: -29px;/*29px is the height of .textSlideVertThree. -100% don't seem to work here*/
+}
+
+.textSlideVertThree:hover #three {
+    top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+HTML:
+<div class="textSideRotateInOut">
+    <a id="one" href="">Awesome</a>
+    <a id="two" href="">Awesome</a>
+</div>
+*/
+.textSideRotateInOut {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background: ;/*Change the color of the background here*/
+    padding: ;/*Change the space around the text here*/
+}
+
+.textSideRotateInOut a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+    -webkit-transition: all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+}
+
+.textSideRotateInOut #one {
+    position: relative;
+    left: 0;
+    -webkit-transform-origin: left;
+        -ms-transform-origin: left;
+            transform-origin: left;
+}
+
+.textSideRotateInOut #two {
+    position: absolute;
+    top: 0;
+    left: 15%;
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    -webkit-transform-origin: right;
+        -ms-transform-origin: right;
+            transform-origin: right;
+}
+
+.textSideRotateInOut:hover #one {
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    left: -15%;
+}
+
+.textSideRotateInOut:hover #two {
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+    left: 0%;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+HTML:
+<div class="textFourSlideMid">
+    <a id="one" href="">Awesome</a>
+    <a id="two" href="">Awesome</a>
+    <a id="three" href="">Awesome</a>
+    <a id="four" href="">Awesome</a>
+    <a id="five" href="">Awesome</a>
+</div>
+*/
+.textFourSlideMid {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background: ;/*Change the color of the background here*/
+    padding: ;/*Change the space around the text here*/
+}
+
+.textFourSlideMid a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: rgba(255,255,255, 0.3);/*Remove the rgba if you don't want the text to have some opacity*/
+    padding: 10px 15px;/*Add your padding here if you want some space around your text*/
+}
+
+.textFourSlideMid #one {
+}
+
+.textFourSlideMid #two, #three, #four, #five {
+    position: absolute;
+}
+
+.textFourSlideMid #two {
+    top: 0;
+    left: 100%;
+}
+
+.textFourSlideMid #three {
+    top: 100%;
+    left: 0;
+}
+
+.textFourSlideMid #four {
+    top: 0;
+    left: -100%;
+}
+
+.textFourSlideMid #five {
+    top: -100%;
+    left: 0;
+}
+
+.textFourSlideMid:hover #two {
+    -webkit-animation: slideTwo 0.5s;
+    -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes slideTwo {
+    100% {
+       left: 0; 
+    }
+}
+
+.textFourSlideMid:hover #three{
+    -webkit-animation: slidethree 0.5s;
+    -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes slidethree {
+    100% {
+       top: 0; 
+    }
+}
+
+.textFourSlideMid:hover #four {
+    -webkit-animation: slidefour 0.5s;
+    -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes slidefour {
+    100% {
+       left: 0; 
+    }
+}
+
+.textFourSlideMid:hover #five {
+    -webkit-animation: slidefive 0.5s;
+    -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes slidefive {
+    100% {
+       top: 0; 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*
+HTML:
+<div class="horizontalBump">
+    <a id="one" href="">Awesome</a>
+    <a id="two" href="">Awesome</a>
+</div>
+*/
+.horizontalBump {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background: ;/*Change the color of the background here*/
+    padding: ;/*Change the space around the text here*/
+}
+
+.horizontalBump a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+    -webkit-transition: all 0.7s ease-in-out;
+            transition: all 0.7s ease-in-out;
+    padding: ;/*Add your padding here if you want some space*/
+}
+
+.horizontalBump #one {
+    position: relative;
+    top: 0;
+    left: 0;
+    background: ;/*Add your color here if you want a background*/
+}
+
+.horizontalBump #two {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: ;/*Add your color here if you want a background*/
+}
+
+.horizontalBump:hover #one {
+    -webkit-animation: horizontalBumpLeft 2.5s;
+    -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes horizontalBumpLeft {
+    0% {
+        left: 0%;
+    }
+    5% {
+        left: -40%;
+    }
+    35% {
+        left: -40%;
+    }
+    40% {
+        left: -60%;
+    }
+    65% {
+        left: -60%;
+    }
+    70% {
+        left: -80%;
+    }
+    95% {
+        left: -80%;
+    }
+    100% {
+        left: -100%;
+    }
+}
+
+.horizontalBump:hover #two {
+    -webkit-animation: horizontalBumpRight 2.5s;
+    -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes horizontalBumpRight {
+    0% {
+        left: 100%;
+    }
+    5% {
+        left: 60%;
+    }
+    10% {
+        left: 60%;
+    }
+    30% {
+        left: 80%;
+    }
+    35% {
+        left: 80%;
+    }
+    40% {
+        left: 40%;
+    }
+    45% {
+        left: 40%;
+    }
+    65% {
+        left: 60%;
+    }
+    70% {
+        left: 20%;
+    }
+    75% {
+        left: 20%
+    }
+    95% {
+        left: 40%
+    }
+    95% {
+        left: 40%
+    }
+    100% {
+        left: 0%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*
+HTML:
+<div class="verticalBump">
+    <a id="one" href="">Awesome</a>
+    <a id="two" href="">Awesome</a>
+</div>
+*/
+.verticalBump {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    width: 130px;/*Change the width of your div*/
+    height: 40px;/*Change the height of your div*/
+    background: ;/*Add your color here if you want a background*/
+}
+
+.verticalBump a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+    padding-top: 5px;/*Add your padding here to center the text vertically*/
+}
+
+.verticalBump #one {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;/*Inherits the width of parent: .verticalBump*/
+    height: 100%;/*Inherits the height of parent: .verticalBump*/
+    background: #333333;/*Remove this if you don't want a background*/
+}
+
+.verticalBump #two {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;/*Inherits the width of parent: .verticalBump*/
+    height: 100%;/*Inherits the height of parent: .verticalBump*/
+    background: #635B37;/*Remove this if you don't want a background*/
+}
+
+.verticalBump:hover #one {
+    -webkit-animation: verticalBumpTop 1s;/*Change the animation duration here*/
+    -webkit-animation-fill-mode: forwards;/*Forwards keeps the animation from reseting, after the animation is done*/
+}
+@-webkit-keyframes verticalBumpTop {
+    0% {
+        top: 0%;
+    }
+    10% {
+        top: -35%;
+    }
+    20% {
+        top: -35%;
+    }
+    30% {
+        top: -25%;
+    }
+    40% {
+        top: -25%
+    }
+    50% {
+        top: -70%;
+    }
+    60% {
+        top: -70%;
+    }
+    70% {
+        top: -60%;
+    }
+    80% {
+        top: -60%;
+    }
+    90% {
+        top: -100%;
+    }
+    100% {
+        top: -100%;
+    }
+}
+
+.verticalBump:hover #two {
+    -webkit-animation: verticalBumpBottom 1s;/*Change the animation duration here*/
+    -webkit-animation-fill-mode: forwards;/*Forwards keeps the animation from reseting, after the animation is done*/
+}
+@-webkit-keyframes verticalBumpBottom {
+    0% {
+        top: 100%
+    }
+    10% {
+        top: 65%;
+    }
+    20% {
+        top: 65%;
+    }
+    30% {
+        top: 75%;
+    }
+    40% {
+        top: 75%;
+    }
+    50% {
+        top: 30%;
+    }
+    60% {
+        top: 30%;
+    }
+    70% {
+        top: 40%;
+    }
+    80% {
+        top: 40%;
+    }
+    90% {
+        top: 0%;
+    }
+    100% {
+        top: 0%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*
+HTML:
+<div class="splitSlideApartOver">
+    <a href="">Awesome</a>
+</div>
+*/
+.splitSlideApartOver {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background: #4D4D4D;/*Remove this if you don't want a background*/
+}
+
+.splitSlideApartOver a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+    padding: 5px 10px;/*Add your padding here if you want some space*/
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+}
+
+.splitSlideApartOver:before, .splitSlideApartOver:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+    z-index: 1;
+}
+
+.splitSlideApartOver:before {
+    left: 0%;
+}
+
+.splitSlideApartOver:after {
+    left: 50%;
+}
+
+.splitSlideApartOver:hover a {
+    -webkit-transform:scale(1.1);
+        -ms-transform:scale(1.1);
+            transform:scale(1.1);
+}
+
+.splitSlideApartOver:hover:before {
+    left: -50%;
+}
+
+.splitSlideApartOver:hover:after {
+    left: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+HTML:
+<div class="splitSlideApartUnder">
+    <a href="">Awesome</a>
+</div>
+*/
+.splitSlideApartUnder {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background: #635B37;/*Remove this if you don't want a background*/
+}
+
+.splitSlideApartUnder a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+    padding: 5px 10px;/*Add your padding here if you want some space*/
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.splitSlideApartUnder:before, .splitSlideApartUnder:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: #333333;
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+    z-index: 0;/*Change this to 2 if you want the ::before to slide over the text*/
+}
+
+.splitSlideApartUnder:before {
+    left: 0%;
+}
+
+.splitSlideApartUnder:after {
+    left: 50%;
+}
+
+.splitSlideApartUnder:hover:before {
+    left: -50%;
+}
+
+.splitSlideApartUnder:hover:after {
+    left: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+HTML:
+<div class="triangleSplit">
+    <a href="">Awesome</a>
+</div>
+*/
+.triangleSplit {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background: #635B37;/*Remove this if you don't want a background*/
+}
+
+.triangleSplit a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+    padding: 5px 10px;/*Add your padding here if you want some space*/
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.triangleSplit:before, .triangleSplit:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #333333;
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+    z-index: 0;/*Change this to 2 if you want the ::before ::after to slide over the text*/
+}
+
+.triangleSplit:before {
+    left: -10%;
+    top: 0;
+    width: 110%;
+    height: 100%;
+    -webkit-transform: rotate(16.5deg);
+        -ms-transform: rotate(16.5deg);
+            transform: rotate(16.5deg);
+    -webkit-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+    background: #333333;
+}
+
+.triangleSplit:after {
+    left: 0;
+    top: 0;
+    width: 110%;
+    height: 100%;
+    -webkit-transform: rotate(16.5deg);
+        -ms-transform: rotate(16.5deg);
+            transform: rotate(16.5deg);
+    -webkit-transform-origin: 0% 0%;
+        -ms-transform-origin: 0% 0%;
+            transform-origin: 0% 0%;
+    background: #333333;
+}
+
+.triangleSplit:hover:before {
+    background: #333333;
+    left: 100%;
+    top: 110%;
+}
+
+.triangleSplit:hover:after {
+    background: #333333;
+    top: -110%;
+    left: -110%;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+HTML:
+<div class="colorSideSlide">
+    <a href="">Awesome</a>
+</div>
+*/
+.colorSideSlide {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background: #333333;/*Remove this if you don't want a background*/
+}
+
+.colorSideSlide a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+    padding: 5px 10px;/*Add your padding here if you want some space around the text*/
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.colorSideSlide:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #635B37;/*Add your color here if you want a background*/
+    -webkit-transition: all 0.7s ease;
+            transition: all 0.7s ease;
+    z-index: 0;/*Change this to 2 if you want the ::before to slide over the text*/
+}
+
+.colorSideSlide:before {
+    left: -100%;/*Change this to 100% if you want ::before to slide in from the right*/
+}
+
+.colorSideSlide:hover:before {
+    left: 0%;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+HTML:
+<div class="hamburgerBarOne">
+    <div id="top"></div>
+    <div id="mid"></div>
+    <div id="bot"></div>
+</div>
+
+JS:
+document.querySelector('.hamburgerBarOne').addEventListener( "click", function() {
+    this.classList.toggle('active');
+});
+*/
+.hamburgerBarOne {
+    position: relative;
+    width: 50px;/*Change the width of the whole ham bar here*/
+    height: 40px;/*Change the height of the whole ham bar here*/
+    background-color: ;/*Add your color here if you want a background*/
+    overflow: ;
+    cursor: pointer;
+}
+
+.hamburgerBarOne #top, .hamburgerBarOne #mid, .hamburgerBarOne #bot {
+    position: absolute;
+    left: 0;
+    width: 100%;/*Change the width of the bars here*/
+    height: 5px;/*Change the height of the bars here*/
+    background: #fff;/*Change the color of the bars here*/
+    -webkit-transition: all 0.4s;
+            transition: all 0.4s;
+    border-radius: 10px;/*Smooth out the corners of the bars here*/
+}
+
+.hamburgerBarOne #top {
+    top: 0;
+}
+.hamburgerBarOne #mid {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);/*Centers the middle bar vertically*/
+}
+.hamburgerBarOne #bot {
+    bottom: 0;
+}
+
+.active.hamburgerBarOne #top {
+    top: 43%;/*Adjust this if the bar in X form looks out of place*/
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+.active.hamburgerBarOne #mid {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.active.hamburgerBarOne #bot {
+    bottom: 43%;/*Adjust this if the bar in X form looks out of place*/
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+}
+
+
+
+
+
+
+
+
+
+
+/*
+HTML:
+<div class="hamburgerBarTwo">
+    <div id="top"></div>
+    <div id="mid"></div>
+    <div id="bot"></div>
+</div>
+
+JS:
+document.querySelector('.hamburgerBarTwo').addEventListener( "click", function() {
+    if(this.classList.contains('active')) {
+        this.classList.add('unActive');
+        this.classList.remove('active');
+    }
+    else if (this.classList.contains('active')) {
+        this.classList.add('active');
+        this.classList.remove('unActive');
+    }
+    else {
+        this.classList.add('active');
+        this.classList.remove('unActive');
+    }
+});
+*/
+.hamburgerBarTwo {
+    position: relative;
+    width: 50px;/*Change the width of the whole ham bar here*/
+    height: 40px;/*Change the height of the whole ham bar here*/
+    background-color: ;/*Add your color here if you want a background*/
+    overflow: ;
+    cursor: pointer;
+}
+
+.hamburgerBarTwo #top, .hamburgerBarTwo #mid, .hamburgerBarTwo #bot {
+    position: absolute;
+    left: 0;
+    width: 100%;/*Change the width of the bars here*/
+    height: 5px;/*Change the height of the bars here*/
+    background: #fff;/*Change the color of the bars here*/
+    border-radius: 10px;/*Smooth out the corners of the bars here*/
+}
+
+.hamburgerBarTwo #top {
+    top: 0;
+}
+.hamburgerBarTwo #mid {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);/*Centers the middle bar vertically*/
+}
+.hamburgerBarTwo #bot {
+    bottom: 0;
+}
+
+/*---------ACTIVE---------*/
+/*Adds class .active. Turns the bars to a X. Click function in main.js*/
+.hamburgerBarTwo.active #top {
+    -webkit-animation: topActiveHamBarTwo 0.7s forwards;
+            animation: topActiveHamBarTwo 0.7s forwards;
+}
+@-webkit-keyframes topActiveHamBarTwo {
+    50% {
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+    }
+    100% {
+        top: 43%;/*Adjust this if the bar in X form looks out of place*/
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+    }
+}
+@keyframes topActiveHamBarTwo {
+    50% {
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+    }
+    100% {
+        top: 43%;/*Adjust this if the bar in X form looks out of place*/
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+    }
+}
+.hamburgerBarTwo.active #mid {
+    -webkit-animation: midActiveHamBarTwo 0.7s forwards;
+            animation: midActiveHamBarTwo 0.7s forwards;
+}
+@-webkit-keyframes midActiveHamBarTwo {
+    50% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+    51% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    100% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+}
+@keyframes midActiveHamBarTwo {
+    50% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+    51% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    100% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+}
+.hamburgerBarTwo.active #bot {
+    -webkit-animation: botActiveHamBarTwo 0.7s forwards;
+            animation: botActiveHamBarTwo 0.7s forwards;
+}
+@-webkit-keyframes botActiveHamBarTwo {
+    50% {
+        bottom: 50%;
+        -webkit-transform: translateY(50%);
+                transform: translateY(50%);
+    }
+    100% {
+        bottom: 43%;/*Adjust this if the bar in X form looks out of place*/
+        -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+    }
+}
+@keyframes botActiveHamBarTwo {
+    50% {
+        bottom: 50%;
+        -webkit-transform: translateY(50%);
+                transform: translateY(50%);
+    }
+    100% {
+        bottom: 43%;/*Adjust this if the bar in X form looks out of place*/
+        -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+    }
+}
+
+/*---------UNACTIVE---------*/
+/*Adds class .unActive. Turns the bars back. Click function in awesomecss.js*/
+.hamburgerBarTwo.unActive #top {
+    -webkit-animation: topUnActiveHamBarTwo 0.7s forwards;
+            animation: topUnActiveHamBarTwo 0.7s forwards;
+}
+@-webkit-keyframes topUnActiveHamBarTwo {
+    0% {
+        top: 43%;/*Adjust this if the bar in X form looks out of place*/
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+    }
+    50% {
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+    }
+}
+@keyframes topUnActiveHamBarTwo {
+    0% {
+        top: 43%;/*Adjust this if the bar in X form looks out of place*/
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+    }
+    50% {
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+    }
+}
+.hamburgerBarTwo.unActive #mid {
+    -webkit-animation: midUnActiveHamBarTwo 0.7s forwards;
+            animation: midUnActiveHamBarTwo 0.7s forwards;
+}
+@-webkit-keyframes midUnActiveHamBarTwo {
+    0% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    50% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    51% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+}
+@keyframes midUnActiveHamBarTwo {
+    0% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    50% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+    51% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+}
+.hamburgerBarTwo.unActive #bot {
+    -webkit-animation: botUnActiveHamBarTwo 0.7s forwards;
+            animation: botUnActiveHamBarTwo 0.7s forwards;
+}
+@-webkit-keyframes botUnActiveHamBarTwo {
+    0% {
+        bottom: 43%;/*Adjust this if the bar in X form looks out of place*/
+        -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+    } 
+    50% {
+        bottom: 50%;
+        -webkit-transform: translateY(50%);
+                transform: translateY(50%);
+    }
+}
+@keyframes botUnActiveHamBarTwo {
+    0% {
+        bottom: 43%;/*Adjust this if the bar in X form looks out of place*/
+        -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+    } 
+    50% {
+        bottom: 50%;
+        -webkit-transform: translateY(50%);
+                transform: translateY(50%);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*
+HTML:
+<div class="hamburgerBarThree">
+    <div id="top"></div>
+    <div id="mid"></div>
+    <div id="bot"></div>
+</div>
+
+JS:
+document.querySelector('.hamburgerBarThree').addEventListener( "click", function() {
+    if(this.classList.contains('active')) {
+        this.classList.add('unActive');
+        this.classList.remove('active');
+    }
+    else if (this.classList.contains('active')) {
+        this.classList.add('active');
+        this.classList.remove('unActive');
+    }
+    else {
+        this.classList.add('active');
+        this.classList.remove('unActive');
+    }
+});
+*/
+.hamburgerBarThree {
+    position: relative;
+    width: 50px;/*Change the width of the whole ham bar here*/
+    height: 40px;/*Change the height of the whole ham bar here*/
+    background-color: ;/*Add your color here if you want a background*/
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.hamburgerBarThree #top, .hamburgerBarThree #mid, .hamburgerBarThree #bot {
+    position: absolute;
+    left: 0;
+    width: 100%;/*Change the width of the bars here*/
+    height: 5px;/*Change the height of the bars here*/
+    background: #fff;/*Change the color of the bars here*/
+    border-radius: ;/*Smooth out the corners of the bars here*/
+}
+
+.hamburgerBarThree #top {
+    top: 0;
+    background: ;
+}
+.hamburgerBarThree #mid {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+.hamburgerBarThree #bot {
+    bottom: 0;
+    background: ;
+}
+
+/*---------ACTIVE---------*/
+/*Adds class .active. Turns the bars to a X. Click function in main.js*/
+.hamburgerBarThree.active #top {
+    -webkit-animation: topActiveHamBarThree 1.1s forwards;
+            animation: topActiveHamBarThree 1.1s forwards;
+}
+@-webkit-keyframes topActiveHamBarThree {
+    40% {
+        left: -50%;
+        top: 50%;
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+        -webkit-transform-origin: bottom center;
+                transform-origin: bottom center;
+    }
+    50% {
+        left: -50%;
+    }
+    70% {
+        left: 0;
+        -webkit-transform-origin: center center;
+                transform-origin: center center;
+    }
+    85% {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+    100% {
+        top: 45%;/*Adjust this if the bar in X form looks out of place*/
+        -webkit-transform: rotate(135deg);
+                transform: rotate(135deg);
+    }
+}
+@keyframes topActiveHamBarThree {
+    40% {
+        left: -50%;
+        top: 50%;
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+        -webkit-transform-origin: bottom center;
+                transform-origin: bottom center;
+    }
+    50% {
+        left: -50%;
+    }
+    70% {
+        left: 0;
+        -webkit-transform-origin: center center;
+                transform-origin: center center;
+    }
+    85% {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+    100% {
+        top: 45%;/*Adjust this if the bar in X form looks out of place*/
+        -webkit-transform: rotate(135deg);
+                transform: rotate(135deg);
+    }
+}
+.hamburgerBarThree.active #mid {
+    -webkit-animation: midActiveHamBarThree 1.1s forwards;
+            animation: midActiveHamBarThree 1.1s forwards;
+}
+@-webkit-keyframes midActiveHamBarThree {
+    50% {
+        -webkit-transform: translateY(-50%) rotateY(0deg);
+                transform: translateY(-50%) rotateY(0deg);
+    }
+    70% {
+        -webkit-transform: translateY(-50%) rotateY(-90deg);
+                transform: translateY(-50%) rotateY(-90deg);
+    }
+    100% {
+        -webkit-transform: rotateY(-90deg);
+                transform: rotateY(-90deg);
+    }
+}
+@keyframes midActiveHamBarThree {
+    50% {
+        -webkit-transform: translateY(-50%) rotateY(0deg);
+                transform: translateY(-50%) rotateY(0deg);
+    }
+    70% {
+        -webkit-transform: translateY(-50%) rotateY(-90deg);
+                transform: translateY(-50%) rotateY(-90deg);
+    }
+    100% {
+        -webkit-transform: rotateY(-90deg);
+                transform: rotateY(-90deg);
+    }
+}
+.hamburgerBarThree.active #bot {
+    -webkit-animation: botActiveHamBarThree 1.1s forwards;
+            animation: botActiveHamBarThree 1.1s forwards;
+}
+@-webkit-keyframes botActiveHamBarThree {
+    40% {
+        left: 50%;
+        bottom: 50%;
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+        -webkit-transform-origin: top center;
+                transform-origin: top center;
+    }
+    50% {
+        left: 50%;
+    }
+    70% {
+        left: 0;
+        -webkit-transform-origin: center center;
+                transform-origin: center center;
+    }
+    85% {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+    100% {
+        bottom: 45%;/*Adjust this if the bar in X form looks out of place*/
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+    }
+}
+@keyframes botActiveHamBarThree {
+    40% {
+        left: 50%;
+        bottom: 50%;
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+        -webkit-transform-origin: top center;
+                transform-origin: top center;
+    }
+    50% {
+        left: 50%;
+    }
+    70% {
+        left: 0;
+        -webkit-transform-origin: center center;
+                transform-origin: center center;
+    }
+    85% {
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+    100% {
+        bottom: 45%;/*Adjust this if the bar in X form looks out of place*/
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+    }
+}
+
+/*---------UNACTIVE---------*/
+/*Adds class .unActive. Turns the bars back. Click function in awesomecss.js*/
+.hamburgerBarThree.unActive #top {
+    -webkit-animation: topUnActiveHamBarThree 1.1s forwards;
+            animation: topUnActiveHamBarThree 1.1s forwards;
+}
+@-webkit-keyframes topUnActiveHamBarThree {
+    0% {
+        top: 45%;/*Adjust this if the bar in X form looks out of place*/
+        left: 0;
+        -webkit-transform: rotate(135deg);
+                transform: rotate(135deg);
+        -webkit-transform-origin: center center;
+                transform-origin: center center;
+    }
+    15% {
+        top: 50%;
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+    30% {
+        left: 0;
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+        -webkit-transform-origin: center center;
+                transform-origin: center center;
+    }
+    50% {
+        left: -50%;
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+        -webkit-transform-origin: bottom center;
+                transform-origin: bottom center;
+    }
+    60% {
+        top: 50%;
+        left: -50%;
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+        -webkit-transform-origin: bottom center;
+                transform-origin: bottom center;
+    }
+}
+@keyframes topUnActiveHamBarThree {
+    0% {
+        top: 45%;/*Adjust this if the bar in X form looks out of place*/
+        left: 0;
+        -webkit-transform: rotate(135deg);
+                transform: rotate(135deg);
+        -webkit-transform-origin: center center;
+                transform-origin: center center;
+    }
+    15% {
+        top: 50%;
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+    30% {
+        left: 0;
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+        -webkit-transform-origin: center center;
+                transform-origin: center center;
+    }
+    50% {
+        left: -50%;
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+        -webkit-transform-origin: bottom center;
+                transform-origin: bottom center;
+    }
+    60% {
+        top: 50%;
+        left: -50%;
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+        -webkit-transform-origin: bottom center;
+                transform-origin: bottom center;
+    }
+}
+.hamburgerBarThree.unActive #mid {
+    -webkit-animation: midUnActiveHamBarThree 1.2s forwards;
+            animation: midUnActiveHamBarThree 1.2s forwards;
+}
+@-webkit-keyframes midUnActiveHamBarThree {
+    0% {
+        -webkit-transform: rotateY(-90deg);
+                transform: rotateY(-90deg);
+    }
+    30% {
+        -webkit-transform: translateY(-50%) rotateY(-90deg);
+                transform: translateY(-50%) rotateY(-90deg);
+    }
+    50% {
+        -webkit-transform: translateY(-50%) rotateY(0deg);
+                transform: translateY(-50%) rotateY(0deg);
+    }
+}
+@keyframes midUnActiveHamBarThree {
+    0% {
+        -webkit-transform: rotateY(-90deg);
+                transform: rotateY(-90deg);
+    }
+    30% {
+        -webkit-transform: translateY(-50%) rotateY(-90deg);
+                transform: translateY(-50%) rotateY(-90deg);
+    }
+    50% {
+        -webkit-transform: translateY(-50%) rotateY(0deg);
+                transform: translateY(-50%) rotateY(0deg);
+    }
+}
+.hamburgerBarThree.unActive #bot {
+    -webkit-animation: botpUnActiveHamBarThree 1.1s forwards;
+            animation: botpUnActiveHamBarThree 1.1s forwards;
+}
+@-webkit-keyframes botpUnActiveHamBarThree {
+    0% {
+        bottom: 45%;/*Adjust this if the bar in X form looks out of place*/
+        left: 0;
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+        -webkit-transform-origin: center center;
+                transform-origin: center center;
+    }
+    15% {
+        bottom: 50%;
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+    30% {
+        left: 0;
+        -webkit-transform-origin: center center;
+                transform-origin: center center;
+    }
+    50% {
+        left: 50%;
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+        -webkit-transform-origin: top center;
+                transform-origin: top center;
+    }
+    60% {
+        bottom: 50%;
+        left: 50%;
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+        -webkit-transform-origin: top center;
+                transform-origin: top center;
+    }
+}
+@keyframes botpUnActiveHamBarThree {
+    0% {
+        bottom: 45%;/*Adjust this if the bar in X form looks out of place*/
+        left: 0;
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+        -webkit-transform-origin: center center;
+                transform-origin: center center;
+    }
+    15% {
+        bottom: 50%;
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+    30% {
+        left: 0;
+        -webkit-transform-origin: center center;
+                transform-origin: center center;
+    }
+    50% {
+        left: 50%;
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+        -webkit-transform-origin: top center;
+                transform-origin: top center;
+    }
+    60% {
+        bottom: 50%;
+        left: 50%;
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+        -webkit-transform-origin: top center;
+                transform-origin: top center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*
+HTML:
+<div class="realHamburgerBar">
+    <div id="topBread"></div>
+    <div id="lettuce"></div>
+    <div id="tomatoes"></div>
+    <div id="cheese"></div>
+    <div id="meat"></div>
+    <div id="botBread"></div>
+</div>
+
+JS:
+document.querySelector('.realHamburgerBar').addEventListener( "click", function() {
+    if(this.classList.contains('active')) {
+        this.classList.add('unActive');
+        this.classList.remove('active');
+    }
+    else if (this.classList.contains('active')) {
+        this.classList.add('active');
+        this.classList.remove('unActive');
+    }
+    else {
+        this.classList.add('active');
+        this.classList.remove('unActive');
+    }
+});
+*/
+.realHamburgerBar {
+    position: relative;
+    width: 55px;/*Change the width of the whole ham bar here*/
+    height: 50px;/*Change the height of the whole ham bar here*/
+    background-color: ;/*Add your color here if you want a background*/
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.realHamburgerBar #topBread, .realHamburgerBar #lettuce, .realHamburgerBar #tomatoes, .realHamburgerBar #cheese, .realHamburgerBar #meat, .realHamburgerBar #botBread {
+    position: absolute;
+    left: 0;
+    width: 100%;/*Change the width of the bars here*/
+    height: ;/*Change the height of all the bars here*/
+    background: ;/*Change the color of the bars here*/
+    border-radius: ;/*Smooth out the corners of the bars here*/
+}
+
+.realHamburgerBar #topBread {
+    top: 0;
+    height: 10px;
+    background: orange;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+.realHamburgerBar #lettuce {
+    top: 24%;
+    height: 3px;
+    background: green;
+}
+.realHamburgerBar #tomatoes {
+    top: 36%;
+    height: 4px;
+    background: red;
+}
+.realHamburgerBar #cheese {
+    top: 50%;
+    height: 3px;
+    background: yellow;
+}
+.realHamburgerBar #meat {
+    top: 61%;
+    height: 6px;
+    background: #4D2F10;
+}
+.realHamburgerBar #botBread {
+    bottom: 0;
+    height: 10px;
+    background: orange;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+/*---------ACTIVE---------*/
+/*Adds class .active. Turns the bars to a X. Click function in main.js*/
+.realHamburgerBar.active #topBread {
+    -webkit-animation: activeTopBread 1s forwards;
+            animation: activeTopBread 1s forwards;
+}
+@-webkit-keyframes activeTopBread {
+    75% {
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+        border-radius: 4px;
+    }
+    100% {
+        top: 42%;/*Adjust this if the bar in X form looks out of place*/
+        -webkit-transform: rotate(-45deg) translateY(0);
+                transform: rotate(-45deg) translateY(0);
+        border-radius: 4px;
+    }
+}
+@keyframes activeTopBread {
+    75% {
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+        border-radius: 4px;
+    }
+    100% {
+        top: 42%;/*Adjust this if the bar in X form looks out of place*/
+        -webkit-transform: rotate(-45deg) translateY(0);
+                transform: rotate(-45deg) translateY(0);
+        border-radius: 4px;
+    }
+}
+.realHamburgerBar.active #lettuce {
+    -webkit-animation: activeLettuce 1.5s forwards;
+            animation: activeLettuce 1.5s forwards;
+}
+@-webkit-keyframes activeLettuce {
+    10% {
+        left: -105%;
+    }
+    100% {
+        left: -105%;
+    }
+}
+@keyframes activeLettuce {
+    10% {
+        left: -105%;
+    }
+    100% {
+        left: -105%;
+    }
+}
+.realHamburgerBar.active #tomatoes {
+    -webkit-animation: activeTomatoes 1.5s forwards;
+            animation: activeTomatoes 1.5s forwards;
+}
+@-webkit-keyframes activeTomatoes {
+    10% {
+        left: 0;
+    }
+    20% {
+        left: 105%;
+    }
+    100% {
+        left: 105%;
+    }
+}
+@keyframes activeTomatoes {
+    10% {
+        left: 0;
+    }
+    20% {
+        left: 105%;
+    }
+    100% {
+        left: 105%;
+    }
+}
+.realHamburgerBar.active #cheese {
+    -webkit-animation: activeCheese 1.5s forwards;
+            animation: activeCheese 1.5s forwards;
+}
+@-webkit-keyframes activeCheese {
+    10% {
+        left: 0;
+    }
+    20% {
+        left: -105%;
+    }
+    100% {
+        left: -105%;
+    }
+}
+@keyframes activeCheese {
+    10% {
+        left: 0;
+    }
+    20% {
+        left: -105%;
+    }
+    100% {
+        left: -105%;
+    }
+}
+.realHamburgerBar.active #meat {
+    -webkit-animation: activeMeat 1.5s forwards;
+            animation: activeMeat 1.5s forwards;
+}
+@-webkit-keyframes activeMeat {
+    10% {
+        left: 105%;
+    }
+    100% {
+        left: 105%;
+    }
+}
+@keyframes activeMeat {
+    10% {
+        left: 105%;
+    }
+    100% {
+        left: 105%;
+    }
+}
+.realHamburgerBar.active #botBread {
+    -webkit-animation: activeBotBread 1s forwards;
+            animation: activeBotBread 1s forwards;
+}
+@-webkit-keyframes activeBotBread {
+    75% {
+        bottom: 50%;
+        -webkit-transform: translateY(50%);
+                transform: translateY(50%);
+        border-radius: 4px;
+    }
+    100% {
+        bottom: 41%;/*Adjust this if the bar in X form looks out of place*/
+        -webkit-transform: rotate(45deg) translateY(0);
+                transform: rotate(45deg) translateY(0);
+        border-radius: 4px;
+    }
+}
+@keyframes activeBotBread {
+    75% {
+        bottom: 50%;
+        -webkit-transform: translateY(50%);
+                transform: translateY(50%);
+        border-radius: 4px;
+    }
+    100% {
+        bottom: 41%;/*Adjust this if the bar in X form looks out of place*/
+        -webkit-transform: rotate(45deg) translateY(0);
+                transform: rotate(45deg) translateY(0);
+        border-radius: 4px;
+    }
+}
+
+/*---------UNACTIVE---------*/
+/*Adds class .unActive. Turns the bars back. Click function in awesomecss.js*/
+.realHamburgerBar.unActive #topBread {
+    -webkit-animation: unActiveTopBread 1s forwards;
+            animation: unActiveTopBread 1s forwards;
+}
+@-webkit-keyframes unActiveTopBread {
+    0% {
+        top: 42%;/*Adjust this if the bar in X form looks out of place*/
+        -webkit-transform: rotate(-45deg) translateY(0);
+                transform: rotate(-45deg) translateY(0);
+        border-radius: 4px;
+    }
+    25% {
+        top: 50%;
+        -webkit-transform: rotate(0deg) translateY(-50%);
+                transform: rotate(0deg) translateY(-50%);
+        border-radius: 4px;
+    }
+}
+@keyframes unActiveTopBread {
+    0% {
+        top: 42%;/*Adjust this if the bar in X form looks out of place*/
+        -webkit-transform: rotate(-45deg) translateY(0);
+                transform: rotate(-45deg) translateY(0);
+        border-radius: 4px;
+    }
+    25% {
+        top: 50%;
+        -webkit-transform: rotate(0deg) translateY(-50%);
+                transform: rotate(0deg) translateY(-50%);
+        border-radius: 4px;
+    }
+}
+.realHamburgerBar.unActive #lettuce {
+    -webkit-animation: unActiveLettuce 1.5s forwards;
+            animation: unActiveLettuce 1.5s forwards;
+}
+@-webkit-keyframes unActiveLettuce {
+    0% {
+        left: -105%;
+    }
+    45% {
+        left: -105%;
+    }
+    55% {
+        left: 0;
+    }
+}
+@keyframes unActiveLettuce {
+    0% {
+        left: -105%;
+    }
+    45% {
+        left: -105%;
+    }
+    55% {
+        left: 0;
+    }
+}
+.realHamburgerBar.unActive #tomatoes {
+    -webkit-animation: unActiveTomatoes 1.5s forwards;
+            animation: unActiveTomatoes 1.5s forwards;
+}
+@-webkit-keyframes unActiveTomatoes {
+    0% {
+        left: 105%;
+    }
+    35% {
+        left: 105%;
+    }
+    45% {
+        left: 0;
+    }
+}
+@keyframes unActiveTomatoes {
+    0% {
+        left: 105%;
+    }
+    35% {
+        left: 105%;
+    }
+    45% {
+        left: 0;
+    }
+}
+.realHamburgerBar.unActive #cheese {
+    -webkit-animation: unActiveCheese 1.5s forwards;
+            animation: unActiveCheese 1.5s forwards;
+}
+@-webkit-keyframes unActiveCheese {
+    0% {
+        left: -105%;
+    }
+    35% {
+        left: -105%;
+    }
+    45% {
+        left: 0;
+    }
+}
+@keyframes unActiveCheese {
+    0% {
+        left: -105%;
+    }
+    35% {
+        left: -105%;
+    }
+    45% {
+        left: 0;
+    }
+}
+.realHamburgerBar.unActive #meat {
+    -webkit-animation: unActiveMeat 1.5s forwards;
+            animation: unActiveMeat 1.5s forwards;
+}
+@-webkit-keyframes unActiveMeat {
+    0% {
+        left: 105%;
+    }
+    45% {
+        left: 105%;
+    }
+    55% {
+        left: 0;
+    }
+}
+@keyframes unActiveMeat {
+    0% {
+        left: 105%;
+    }
+    45% {
+        left: 105%;
+    }
+    55% {
+        left: 0;
+    }
+}
+.realHamburgerBar.unActive #botBread {
+    -webkit-animation: unActiveBotBread 1s forwards;
+            animation: unActiveBotBread 1s forwards;
+}
+@-webkit-keyframes unActiveBotBread {
+    0% {
+        bottom: 41%;/*Adjust this if the bar in X form looks out of place*/
+        -webkit-transform: rotate(45deg) translateY(0);
+                transform: rotate(45deg) translateY(0);
+        border-radius: 4px;
+    }
+    25% {
+        bottom: 50%;
+        -webkit-transform: rotate(0deg) translateY(50%);
+                transform: rotate(0deg) translateY(50%);
+        border-radius: 4px;
+    }
+}
+@keyframes unActiveBotBread {
+    0% {
+        bottom: 41%;/*Adjust this if the bar in X form looks out of place*/
+        -webkit-transform: rotate(45deg) translateY(0);
+                transform: rotate(45deg) translateY(0);
+        border-radius: 4px;
+    }
+    25% {
+        bottom: 50%;
+        -webkit-transform: rotate(0deg) translateY(50%);
+                transform: rotate(0deg) translateY(50%);
+        border-radius: 4px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*
+HTML:
+<div class="inToAStar">
+    <a href="">Awesome</a>
+</div>
+*/
+.inToAStar {
+    position: relative;
+    padding: 15px 20px;/*Change this to create space around the text*/
+    background-color: #333333;
+    -webkit-transition: all 0.7s;
+            transition: all 0.7s;
+    -webkit-clip-path: polygon(/*Change these values to affect the shape of the div*/
+        0% 0%,
+        50% 0%,
+        100% 0%,
+        100% 50%,
+        100% 100%,
+        50% 100%,
+        0% 100%,
+        0% 50%
+    );
+}
+
+.inToAStar a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+}
+
+.inToAStar:hover {
+      background-color: #635B37;
+      -webkit-clip-path: polygon(
+          25% 25%,
+          50% 0%,
+          75% 25%,
+          100% 50%,
+          75% 75%,
+          50% 100%,
+          25% 75%,
+          0% 50%
+      );
+}
+
+
+
+
+
+
+
+
+
+
+/*
+<div class="sideIndent">
+    <a href="">Awesome</a>
+</div>
+*/
+.sideIndent {
+    position: relative;
+    padding: 15px 20px;/*Change this to create space around the text*/
+    background-color: #333333;
+    -webkit-transition: all 0.7s;
+            transition: all 0.7s;  
+    -webkit-clip-path: polygon(
+        0% 0%,
+        50% 0%,
+        100% 0%,
+        100% 50%,
+        100% 100%,
+        50% 100%,
+        0% 100%,
+        0% 50%
+    );
+}
+
+.sideIndent a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+}
+
+.sideIndent:hover {
+      background-color: #635B37;
+      -webkit-clip-path: polygon(
+          10% 0%,
+          50% 20%,
+          90% 0%,
+          75% 50%,
+          90% 100%,
+          50% 80%,
+          10% 100%,
+          25% 50%
+      );
+}
+
+
+
+
+
+
+
+
+
+
+/*
+HTML:
+<div class="spikesIn">
+    <a href="">Awesome</a>
+</div>
+*/
+.spikesIn {
+    position: relative;
+    padding: 15px 20px;/*Change this to create space around the text*/
+    background-color: #333333;
+    -webkit-transition: all 0.7s;
+            transition: all 0.7s;  
+    -webkit-clip-path: polygon(
+        0% 0%,
+        25% 0%,
+        50% 0%,
+        75% 0%,
+        100% 0%,
+        100% 50%,
+        100% 100%,
+        50% 100%,
+        25% 100%,
+        0% 100%,
+        0% 50%
+    );
+}
+
+.spikesIn a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+}
+
+.spikesIn:hover {
+    -webkit-animation: spikesIn 2s infinite;
+}
+
+@-webkit-keyframes spikesIn {
+    0% {
+        -webkit-clip-path: polygon(
+            0% 0%,
+            25% 0%,
+            50% 0%,
+            75% 0%,
+            100% 0%,
+            100% 50%,
+            100% 100%,
+            75% 100%,
+            50% 100%,
+            25% 100%,
+            0% 100%,
+            0% 50%
+        );      
+    }
+    11% {
+        -webkit-clip-path: polygon(
+            0% 0%,
+            25% 20%,
+            50% 0%,
+            75% 0%,
+            100% 0%,
+            100% 50%,
+            100% 100%,
+            75% 100%,
+            50% 100%,
+            25% 100%,
+            0% 100%,
+            0% 50%
+        );
+    }
+    22% {
+        -webkit-clip-path: polygon(
+            0% 0%,
+            25% 0%,
+            50% 20%,
+            75% 0%,
+            100% 0%,
+            100% 50%,
+            100% 100%,
+            75% 100%,
+            50% 100%,
+            25% 100%,
+            0% 100%,
+            0% 50%
+        );
+    }
+    33% {
+        -webkit-clip-path: polygon(
+            0% 0%,
+            25% 0%,
+            50% 0%,
+            75% 20%,
+            100% 0%,
+            100% 50%,
+            100% 100%,
+            75% 100%,
+            50% 100%,
+            25% 100%,
+            0% 100%,
+            0% 50%
+        );
+    }
+    44% {
+        -webkit-clip-path: polygon(
+            0% 0%,
+            25% 0%,
+            50% 0%,
+            75% 0%,
+            100% 0%,
+            93% 50%,
+            100% 100%,
+            75% 100%,
+            50% 100%,
+            25% 100%,
+            0% 100%,
+            0% 50%
+        );
+    }
+    55% {
+        -webkit-clip-path: polygon(
+            0% 0%,
+            25% 0%,
+            50% 0%,
+            75% 0%,
+            100% 0%,
+            100% 50%,
+            100% 100%,
+            75% 80%,
+            50% 100%,
+            25% 100%,
+            0% 100%,
+            0% 50%
+        );
+    }
+    66% {
+        -webkit-clip-path: polygon(
+            0% 0%,
+            25% 0%,
+            50% 0%,
+            75% 0%,
+            100% 0%,
+            100% 50%,
+            100% 100%,
+            75% 100%,
+            50% 80%,
+            25% 100%,
+            0% 100%,
+            0% 50%
+        );
+    }
+    77% {
+        -webkit-clip-path: polygon(
+            0% 0%,
+            25% 0%,
+            50% 0%,
+            75% 0%,
+            100% 0%,
+            100% 50%,
+            100% 100%,
+            75% 100%,
+            50% 100%,
+            25% 80%,
+            0% 100%,
+            0% 50%
+        );
+    }
+    88% {
+        -webkit-clip-path: polygon(
+            0% 0%,
+            25% 0%,
+            50% 0%,
+            75% 0%,
+            100% 0%,
+            100% 50%,
+            100% 100%,
+            75% 100%,
+            50% 100%,
+            25% 100%,
+            0% 100%,
+            7% 50%
+        );
+    }
+    100% {
+        -webkit-clip-path: polygon(
+            0% 0%,
+            25% 0%,
+            50% 0%,
+            75% 0%,
+            100% 0%,
+            100% 50%,
+            100% 100%,
+            75% 100%,
+            50% 100%,
+            25% 100%,
+            0% 100%,
+            0% 50%
+        );      
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*
+HTML:
+<div class="batman">
+    <a href="">Batman</a>
+</div>
+*/
+.batman {
+    position: relative;
+    padding: 18px 50px;/*Change this to create space around the text*/
+    background-color: #333333;
+    -webkit-transition: all 1s;
+            transition: all 1s;
+    -webkit-clip-path: polygon(
+        0% 0%,
+        20% 0%,
+        30% 0%,
+        44% 0%,
+        45% 0%,
+        47% 0%,
+        50% 0%,
+        53% 0%,
+        55% 0%,
+        56% 0%,
+        70% 0%,
+        80% 0%,
+        100% 0%,
+        100% 0%,
+        100% 40%,
+        100% 70%,
+        100% 80%,
+        100% 100%,
+        50% 100%,
+        0% 100%,
+        0% 80%,
+        0% 70%,
+        0% 40%,
+        0% 0%
+    );
+}
+
+.batman a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: yellow;/*Change the text color here*/
+}
+
+.batman:hover {
+    -webkit-clip-path: polygon(
+        0% 0%,
+        20% 10%,
+        30% 20%,
+        44% 20%,
+        45% 0%,
+        47% 10%,
+        50% 10%,
+        53% 10%,
+        55% 0%,
+        56% 20%,
+        70% 20%,
+        80% 10%,
+        100% 0%,
+        100% 0%,
+        85% 40%,
+        87% 70%,
+        60% 80%,
+        55% 90%,
+        50% 100%,
+        45% 90%,
+        40% 80%,
+        13% 70%,
+        15% 40%,
+        0% 0%
+    );
+}
+
+
+
+
+
+
+
+
+
+
+/*
+HTML:
+<div class="curtains">
+    <a href="">Awesome</a>
+
+    <div class="curtain curtLeftBehind"></div>
+    <div class="curtain curtLeftFront"></div>
+
+    <div class="curtain curtRightBehind"></div>
+    <div class="curtain curtRightFront"></div>
+
+    <div class="ropeLeftBehind"></div>
+    <div class="ropeLeftFront"></div>
+
+    <div class="ropeRightBehind"></div>
+    <div class="ropeRightFront"></div>
+
+</div>
+*/
+.curtains {
+    position: relative;
+    padding: 15px 35px;/*Change this to create space around the text*/
+    background-color: #333333;
+}
+
+.curtains a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+}
+
+.curtain {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #F20000;
+    -webkit-transition: all 1s;
+            transition: all 1s;
+}
+
+
+
+.curtLeftFront {
+    left: 0%;
+    -webkit-clip-path: polygon(
+        0% 0%,/* top left */
+        97% 0%,/* top right */
+        95% 20%,
+        92% 40%,
+        88% 60%,
+        83% 80%,
+        77% 100%,/* bottom right */
+        0% 100%/* bottom left */
+    );
+}
+
+.curtains:hover .curtLeftFront {
+    -webkit-clip-path: polygon(
+        0% 0%,/* top left */
+        50% 0%,/* top right */
+        45% 20%,
+        35% 40%,
+        20% 60%,
+        25% 80%,
+        27% 100%,/* bottom right */
+        0% 100%/* bottom left */
+    );
+}
+
+.curtRightFront {
+    left: 50%;
+    -webkit-clip-path: polygon(
+        3% 0%,/* top left */
+        100% 0%,/* top right */
+        100% 100%,/* bottom right */
+        23% 100%,/* bottom left */
+        17% 80%,
+        12% 60%,
+        8% 40%,
+        5% 20%
+    );
+}
+
+.curtains:hover .curtRightFront {
+    -webkit-clip-path: polygon(
+        50% 0%,/* top left */
+        100% 0%,/* top right */
+        100% 100%,/* bottom right */
+        73% 100%,/* bottom left */
+        75% 80%,
+        80% 60%,
+        65% 40%,
+        55% 20%
+    );
+}
+
+
+
+.curtLeftBehind {
+    left: 0%;
+    background-color: #000000;
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+    -webkit-clip-path: polygon(
+        0% 0%,/* top left */
+        97% 0%,/* top right */
+        97% 20%,
+        96% 40%,
+        94% 60%,
+        92% 80%,
+        89% 100%,/* bottom right */
+        0% 100%/* bottom left */
+    );
+}
+
+.curtains:hover .curtLeftBehind {
+    -webkit-clip-path: polygon(
+        0% 0%,/* top left */
+        50% 0%,/* top right */
+        48% 20%,
+        41% 40%,
+        20% 80%,
+        20% 80%,
+        20% 100%,/* bottom right */
+        0% 100%/* bottom left */
+    );
+}
+
+.curtRightBehind {
+    left: 50%;
+    background-color: #000000;
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+    -webkit-clip-path: polygon(
+        3% 0%,/* top left */
+        100% 0%,/* top right */
+        100% 100%,/* bottom right */
+        11% 100%,/* bottom left */
+        8% 80%,
+        6% 60%,
+        4% 40%,
+        3% 20%
+    );
+}
+
+.curtains:hover .curtRightBehind {
+    -webkit-clip-path: polygon(
+        50% 0%,/* top left */
+        100% 0%,/* top right */
+        100% 100%,/* bottom right */
+        80% 100%,/* bottom left */
+        80% 80%,
+        80% 80%,
+        59% 40%,
+        52% 20%
+    );
+}
+
+
+
+.ropeLeftFront {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: yellow;
+    -webkit-transition: all 1s;
+            transition: all 1s;
+    -webkit-clip-path: polygon(
+        0% 60%,/* top left */
+        22% 65%,
+        44% 67%,
+        66% 65%,
+        88% 60%,/* top right */
+        87% 65%,/* bottom right */
+        66% 70%,
+        44% 72%,
+        22% 70%,
+        0% 67%/* bottom left */
+    );
+}
+
+.curtains:hover .ropeLeftFront {
+    -webkit-clip-path: polygon(
+        0% 58%,/* top left */
+        0% 58%,
+        0% 58%,
+        0% 58%,
+        21% 60%,/* top right */
+        22% 65%,/* bottom right */
+        0% 63%,
+        0% 63%,
+        0% 63%,
+        0% 63%/* bottom left */
+    );
+}
+
+.ropeRightFront {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 1;
+    background-color: yellow;
+    -webkit-transition: all 1s;
+            transition: all 1s;
+    -webkit-clip-path: polygon(
+        12% 60%,/* top left */
+        34% 65%,
+        56% 67%,
+        78% 65%,
+        100% 60%,/* top right */
+        100% 67%,/* bottom right */
+        78% 70%,
+        56% 72%,
+        34% 70%,
+        13% 65%/* bottom left */
+    );
+}
+
+.curtains:hover .ropeRightFront {
+    -webkit-clip-path: polygon(
+        79% 60%,/* top left */
+        100% 58%,
+        100% 58%,
+        100% 58%,
+        100% 58%,/* top right */
+        100% 63%,/* bottom right */
+        100% 63%,
+        100% 63%,
+        100% 63%,
+        78% 65%/* bottom left */
+    );
+}
+
+
+
+.ropeLeftBehind {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #000000;
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+    -webkit-transition: all 1s;
+            transition: all 1s;
+    -webkit-clip-path: polygon(
+        0% 60%,/* top left */
+        22% 65%,
+        44% 67%,
+        66% 65%,
+        88% 60%,/* top right */
+        86% 66%,/* bottom right */
+        66% 74%,
+        44% 76%,
+        22% 74%,
+        0% 69%/* bottom left */
+    );
+}
+.curtains:hover .ropeLeftBehind {
+    -webkit-clip-path: polygon(
+        0% 58%,/* top left */
+        0% 58%,
+        0% 58%,
+        0% 58%,
+        21% 60%,/* top right */
+        21% 66%,/* bottom right */
+        0% 67%,
+        0% 67%,
+        0% 67%,
+        0% 67%/* bottom left */
+    );
+}
+
+.ropeRightBehind {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 1;
+    background-color: #000000;
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+    -webkit-transition: all 1s;
+            transition: all 1s;
+    -webkit-clip-path: polygon(
+        12% 60%,/* top left */
+        34% 65%,
+        56% 67%,
+        78% 65%,
+        100% 60%,/* top right */
+        100% 69%,/* bottom right */
+        78% 74%,
+        56% 76%,
+        34% 74%,
+        13% 65%/* bottom left */
+    );
+}
+
+.curtains:hover .ropeRightBehind {
+    -webkit-clip-path: polygon(
+        79% 60%,/* top left */
+        100% 58%,
+        100% 58%,
+        100% 58%,
+        100% 58%,/* top right */
+        100% 67%,/* bottom right */
+        100% 67%,
+        100% 67%,
+        100% 67%,
+        79% 66%/* bottom left */
+    );
+}
+
+
+
+
+
+
+
+
+
+
+/*
+<input type="range" value="50" min="0" max="100" id="blueRangeBox" oninput="blueRangeBox()">
+*/
+#blueRangeBox {
+    -webkit-appearance: none;/*Removes the default slider thumb*/
+    width: 200px;
+}
+
+#blueRangeBox:focus {
+    outline: none;
+}
+
+#blueRangeBox::-webkit-slider-thumb {
+    -webkit-appearance: none;/*Removes the default slider thumb*/
+    height: 20px;
+    width: 15px;
+    background: #635B37;
+    cursor: pointer;
+    box-shadow: 0 0 5px 1px rgba(0,0,0,0.7);
+}
+
+#blueRangeBox::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 20px;
+    background: #333333;
+    outline: 2px solid #635B37;
+    box-shadow: inset 0 0 5px 1px rgba(0,0,0,0.7);
+}
+/*
+function blueRangeBox() {
+    var blueRangeBox = document.getElementById('blueRangeBox').value;
+    //console.log(blueRangeBox);
+}
+*/
+
+
+
+
+
+
+
+
+
+
+/*
+<input type="range" value="0" min="0" max="100" id="powerRangerInput" oninput="powerRanger()"/>
+*/
+#powerRangerInput {
+    -webkit-appearance: none;/*Removes the default slider thumb*/
+    width: 200px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#powerRangerInput:focus {
+    outline: none;
+}
+
+#powerRangerInput::-webkit-slider-thumb {
+    -webkit-appearance: none;/*Removes the default slider thumb*/
+    width: 15px;
+    height: 20px;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: #635B37;
+}
+
+#powerRangerInput::-webkit-slider-thumb:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -185px;/*powerRangerInput width:200px - slider-thumb width:15px*/
+    width: 185px;/*powerRangerInput width:200px - slider-thumb width:15px*/
+    height: 20px;
+    background: -webkit-linear-gradient(left, #242115 , #635B37);
+}
+
+#powerRangerInput::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 20px;
+    background: #333333;
+}
+/*
+function powerRanger() {
+    var powerRangerInput = document.getElementById('powerRangerInput').value;
+    //console.log(powerRangerInput);
+}
+*/
+
+
+
+
+
+
+
+
+
+
+/*
+<output id="redRangeOut">50</output>
+<input type="range" value="50" min="0" max="100" id="redRangeIn" oninput="redRangeOut.value=value"/>
+*/
+.redRange {
+}
+
+#redRangeIn {
+    -webkit-appearance: none;
+    width: 200px;
+    height: 4px;
+    background: -webkit-linear-gradient(left, #242115 0%, #635B37 50%, #242115 100%);
+}
+
+#redRangeIn:focus {
+    outline: none;
+}
+
+#redRangeIn::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background: #333333;
+    border: 3px solid #635B37;
+    border-radius: 10px;
+}
+
+#redRangeOut {
+    display: block;
+    color: #635B37;
+    font-weight: bold;
+    text-align: center;
+}
+/*
+function redRange() {
+    var redRange = document.getElementById('redRangeIn').value,
+        redRangeOut = document.getElementById('redRangeOut');
+    
+    redRangeOut.innerHTML = redRange;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+/*
+<input type="range" value="0" min="0" max="100" id="ragingInput" oninput="raging()"/>
+*/
+#ragingInput {
+    -webkit-appearance: none;
+    padding-left: 6px;
+    padding-right: 6px;
+    width: 200px;
+    height: 20px;
+    border-radius: 10px;
+    background: -webkit-linear-gradient(top, #17150D, #635B37);
+    border: 2px solid #635B37;
+}
+
+#ragingInput:focus {
+    outline: none;
+}
+
+#ragingInput::-webkit-slider-thumb {
+    -webkit-appearance:none;
+    margin-top: -10px;
+    width: 27px;
+    height: 27px;
+    position: relative;
+    border: 2px solid #242115;
+    border-radius: 25px;
+    background: -webkit-radial-gradient(#635B37, #242115);
+}
+
+#ragingInput::-webkit-slider-runnable-track {
+    width: 200px;
+    height: 6px;
+    border-radius: 15px;
+    background: #000;
+}
+/*
+function raging() {
+    var ragingInput = document.getElementById('ragingInput').value;
+    console.log(ragingInput);
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
