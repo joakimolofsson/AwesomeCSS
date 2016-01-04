@@ -1,0 +1,122 @@
+/*
+HTML:
+<div class="verticalBump">
+    <a id="one" href="">Awesome</a>
+    <a id="two" href="">Awesome</a>
+</div>
+*/
+.verticalBump {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    width: 130px;/*Change the width of your div*/
+    height: 40px;/*Change the height of your div*/
+    background: ;/*Add your color here if you want a background*/
+}
+
+.verticalBump a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+    padding-top: 5px;/*Add your padding here to center the text vertically*/
+}
+
+.verticalBump #one {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;/*Inherits the width of parent: .verticalBump*/
+    height: 100%;/*Inherits the height of parent: .verticalBump*/
+    background: #333333;/*Remove this if you don't want a background*/
+}
+
+.verticalBump #two {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;/*Inherits the width of parent: .verticalBump*/
+    height: 100%;/*Inherits the height of parent: .verticalBump*/
+    background: #635B37;/*Remove this if you don't want a background*/
+}
+
+.verticalBump:hover #one {
+    -webkit-animation: verticalBumpTop 1s;/*Change the animation duration here*/
+    -webkit-animation-fill-mode: forwards;/*Forwards keeps the animation from reseting, after the animation is done*/
+}
+@-webkit-keyframes verticalBumpTop {
+    0% {
+        top: 0%;
+    }
+    10% {
+        top: -35%;
+    }
+    20% {
+        top: -35%;
+    }
+    30% {
+        top: -25%;
+    }
+    40% {
+        top: -25%
+    }
+    50% {
+        top: -70%;
+    }
+    60% {
+        top: -70%;
+    }
+    70% {
+        top: -60%;
+    }
+    80% {
+        top: -60%;
+    }
+    90% {
+        top: -100%;
+    }
+    100% {
+        top: -100%;
+    }
+}
+
+.verticalBump:hover #two {
+    -webkit-animation: verticalBumpBottom 1s;/*Change the animation duration here*/
+    -webkit-animation-fill-mode: forwards;/*Forwards keeps the animation from reseting, after the animation is done*/
+}
+@-webkit-keyframes verticalBumpBottom {
+    0% {
+        top: 100%
+    }
+    10% {
+        top: 65%;
+    }
+    20% {
+        top: 65%;
+    }
+    30% {
+        top: 75%;
+    }
+    40% {
+        top: 75%;
+    }
+    50% {
+        top: 30%;
+    }
+    60% {
+        top: 30%;
+    }
+    70% {
+        top: 40%;
+    }
+    80% {
+        top: 40%;
+    }
+    90% {
+        top: 0%;
+    }
+    100% {
+        top: 0%;
+    }
+}

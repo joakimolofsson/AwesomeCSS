@@ -1,0 +1,41 @@
+/*
+<input type="range" value="0" min="0" max="100" id="ragingInput" oninput="raging()"/>
+*/
+#ragingInput {
+    -webkit-appearance: none;
+    padding-left: 6px;
+    padding-right: 6px;
+    width: 200px;
+    height: 20px;
+    border-radius: 10px;
+    background: -webkit-linear-gradient(top, #17150D, #635B37);
+    border: 2px solid #635B37;
+}
+
+#ragingInput:focus {
+    outline: none;
+}
+
+#ragingInput::-webkit-slider-thumb {
+    -webkit-appearance:none;
+    margin-top: -10px;
+    width: 27px;
+    height: 27px;
+    position: relative;
+    border: 2px solid #242115;
+    border-radius: 25px;
+    background: -webkit-radial-gradient(#635B37, #242115);
+}
+
+#ragingInput::-webkit-slider-runnable-track {
+    width: 200px;
+    height: 6px;
+    border-radius: 15px;
+    background: #000;
+}
+/*
+function raging() {
+    var ragingInput = document.getElementById('ragingInput').value;
+    console.log(ragingInput);
+}
+*/

@@ -1,0 +1,43 @@
+/*
+HTML:
+<div class="textSlideHori">
+    <a id="one" href="">Awesome</a>
+    <a id="two" href="">Awesome</a>
+</div>
+*/
+.textSlideHori {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background: ;/*Change the color of the background here*/
+    padding: ;/*Change the space around the text here*/
+}
+
+.textSlideHori a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+    transition: all 0.7s ease-in-out;
+}
+
+.textSlideHori #one {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.textSlideHori #two {
+    position: absolute;
+    top: 0;
+    left: 150%;
+}
+
+.textSlideHori:hover #one {
+    left: -150%;
+}
+
+.textSlideHori:hover #two {
+    left: 0%;
+}

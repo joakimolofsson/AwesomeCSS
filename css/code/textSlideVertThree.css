@@ -1,0 +1,53 @@
+/*
+HTML:
+<div class="textSlideVertThree">
+    <a id="one" href="">Awesome</a>
+    <a id="two" href="">CSS</a>
+    <a id="three" href="">Awesome</a>
+</div>
+*/
+.textSlideVertThree {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background: ;/*Change the color of the background here*/
+    padding: ;/*Change the space around the text here*/
+}
+
+.textSlideVertThree a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+    transition: all 0.6s ease-in-out;
+}
+
+.textSlideVertThree #one {
+    position: relative;
+    top: 0;
+}
+
+.textSlideVertThree #two {
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.textSlideVertThree #three {
+    position: absolute;
+    top: 260%;
+}
+
+.textSlideVertThree:hover #one {
+    top: -58px;/*58px is the height of .textSlideVertThree * 2. -200% don't seem to work here*/
+}
+
+.textSlideVertThree:hover #two {
+    top: -29px;/*29px is the height of .textSlideVertThree. -100% don't seem to work here*/
+}
+
+.textSlideVertThree:hover #three {
+    top: 0;
+}

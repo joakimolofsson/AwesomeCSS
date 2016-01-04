@@ -1,0 +1,54 @@
+/*
+HTML:
+<div class="hamburgerBarOne">
+    <div id="top"></div>
+    <div id="mid"></div>
+    <div id="bot"></div>
+</div>
+
+JS:
+document.querySelector('.hamburgerBarOne').addEventListener( "click", function() {
+    this.classList.toggle('active');
+});
+*/
+.hamburgerBarOne {
+    position: relative;
+    width: 50px;/*Change the width of the whole ham bar here*/
+    height: 40px;/*Change the height of the whole ham bar here*/
+    background-color: ;/*Add your color here if you want a background*/
+    overflow: ;
+    cursor: pointer;
+}
+
+.hamburgerBarOne #top, .hamburgerBarOne #mid, .hamburgerBarOne #bot {
+    position: absolute;
+    left: 0;
+    width: 100%;/*Change the width of the bars here*/
+    height: 5px;/*Change the height of the bars here*/
+    background: #fff;/*Change the color of the bars here*/
+    transition: all 0.4s;
+    border-radius: 10px;/*Smooth out the corners of the bars here*/
+}
+
+.hamburgerBarOne #top {
+    top: 0;
+}
+.hamburgerBarOne #mid {
+    top: 50%;
+    transform: translateY(-50%);/*Centers the middle bar vertically*/
+}
+.hamburgerBarOne #bot {
+    bottom: 0;
+}
+
+.active.hamburgerBarOne #top {
+    top: 43%;/*Adjust this if the bar in X form looks out of place*/
+    transform: rotate(45deg);
+}
+.active.hamburgerBarOne #mid {
+    opacity: 0;
+}
+.active.hamburgerBarOne #bot {
+    bottom: 43%;/*Adjust this if the bar in X form looks out of place*/
+    transform: rotate(-45deg);
+}

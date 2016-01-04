@@ -1,0 +1,42 @@
+/*
+<output id="redRangeOut">50</output>
+<input type="range" value="50" min="0" max="100" id="redRangeIn" oninput="redRangeOut.value=value"/>
+*/
+.redRangeContainer {
+}
+
+#redRangeIn {
+    -webkit-appearance: none;
+    width: 200px;
+    height: 4px;
+    background: -webkit-linear-gradient(left, #242115 0%, #635B37 50%, #242115 100%);
+}
+
+#redRangeIn:focus {
+    outline: none;
+}
+
+#redRangeIn::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background: #333333;
+    border: 3px solid #635B37;
+    border-radius: 10px;
+}
+
+#redRangeOut {
+    display: block;
+    color: #635B37;
+    font-weight: bold;
+    text-align: center;
+}
+/*
+function redRange() {
+    var redRange = document.getElementById('redRangeIn').value,
+        redRangeOut = document.getElementById('redRangeOut');
+    
+    redRangeOut.innerHTML = redRange;
+}
+*/

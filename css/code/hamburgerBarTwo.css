@@ -1,0 +1,138 @@
+/*
+HTML:
+<div class="hamburgerBarTwo">
+    <div id="top"></div>
+    <div id="mid"></div>
+    <div id="bot"></div>
+</div>
+
+JS:
+document.querySelector('.hamburgerBarTwo').addEventListener( "click", function() {
+    if(this.classList.contains('active')) {
+        this.classList.add('unActive');
+        this.classList.remove('active');
+    }
+    else if (this.classList.contains('active')) {
+        this.classList.add('active');
+        this.classList.remove('unActive');
+    }
+    else {
+        this.classList.add('active');
+        this.classList.remove('unActive');
+    }
+});
+*/
+.hamburgerBarTwo {
+    position: relative;
+    width: 50px;/*Change the width of the whole ham bar here*/
+    height: 40px;/*Change the height of the whole ham bar here*/
+    background-color: ;/*Add your color here if you want a background*/
+    overflow: ;
+    cursor: pointer;
+}
+
+.hamburgerBarTwo #top, .hamburgerBarTwo #mid, .hamburgerBarTwo #bot {
+    position: absolute;
+    left: 0;
+    width: 100%;/*Change the width of the bars here*/
+    height: 5px;/*Change the height of the bars here*/
+    background: #fff;/*Change the color of the bars here*/
+    border-radius: 10px;/*Smooth out the corners of the bars here*/
+}
+
+.hamburgerBarTwo #top {
+    top: 0;
+}
+.hamburgerBarTwo #mid {
+    top: 50%;
+    transform: translateY(-50%);/*Centers the middle bar vertically*/
+}
+.hamburgerBarTwo #bot {
+    bottom: 0;
+}
+
+/*---------ACTIVE---------*/
+/*Adds class .active. Turns the bars to a X. Click function in main.js*/
+.hamburgerBarTwo.active #top {
+    animation: topActiveHamBarTwo 0.7s forwards;
+}
+@keyframes topActiveHamBarTwo {
+    50% {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    100% {
+        top: 43%;/*Adjust this if the bar in X form looks out of place*/
+        transform: rotate(45deg);
+    }
+}
+.hamburgerBarTwo.active #mid {
+    animation: midActiveHamBarTwo 0.7s forwards;
+}
+@keyframes midActiveHamBarTwo {
+    50% {
+        opacity: 1;
+    }
+    51% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.hamburgerBarTwo.active #bot {
+    animation: botActiveHamBarTwo 0.7s forwards;
+}
+@keyframes botActiveHamBarTwo {
+    50% {
+        bottom: 50%;
+        transform: translateY(50%);
+    }
+    100% {
+        bottom: 43%;/*Adjust this if the bar in X form looks out of place*/
+        transform: rotate(-45deg);
+    }
+}
+
+/*---------UNACTIVE---------*/
+/*Adds class .unActive. Turns the bars back. Click function in awesomecss.js*/
+.hamburgerBarTwo.unActive #top {
+    animation: topUnActiveHamBarTwo 0.7s forwards;
+}
+@keyframes topUnActiveHamBarTwo {
+    0% {
+        top: 43%;/*Adjust this if the bar in X form looks out of place*/
+        transform: rotate(45deg);
+    }
+    50% {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+.hamburgerBarTwo.unActive #mid {
+    animation: midUnActiveHamBarTwo 0.7s forwards;
+}
+@keyframes midUnActiveHamBarTwo {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    51% {
+        opacity: 1;
+    }
+}
+.hamburgerBarTwo.unActive #bot {
+    animation: botUnActiveHamBarTwo 0.7s forwards;
+}
+@keyframes botUnActiveHamBarTwo {
+    0% {
+        bottom: 43%;/*Adjust this if the bar in X form looks out of place*/
+        transform: rotate(-45deg);
+    } 
+    50% {
+        bottom: 50%;
+        transform: translateY(50%);
+    }
+}

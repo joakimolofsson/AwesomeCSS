@@ -1,0 +1,52 @@
+/*
+HTML:
+<div class="borderTopBottomSlideUpDownOpacity">
+    <a href="">Awesome</a>
+</div>
+*/
+.borderTopBottomSlideUpDownOpacity {
+    position: relative;
+    background: ;/*Change the color of the background here*/
+    padding: ;/*Change the space around the text here*/
+}
+
+.borderTopBottomSlideUpDownOpacity a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+}
+
+.borderTopBottomSlideUpDownOpacity:before, .borderTopBottomSlideUpDownOpacity:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;/*Change the height of both border here*/
+    background: #fff;/*Change the color of both border here*/
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: all 0.5s ease;/*Change the animation time and animation ease here*/
+            transition: all 0.5s ease;/*Change the animation time and animation ease here*/
+}
+
+.borderTopBottomSlideUpDownOpacity:before {
+    top: -6px;/*Change the border start position here*/
+}
+
+.borderTopBottomSlideUpDownOpacity:after {
+    bottom: -6px;/*Change the border start position here*/
+}
+
+.borderTopBottomSlideUpDownOpacity:hover:before {
+    top: 0;/*Change the border end position here*/
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.borderTopBottomSlideUpDownOpacity:hover:after {
+    bottom: 0;/*Change the border end position here*/
+    opacity: 1;
+    filter: alpha(opacity=100);
+}

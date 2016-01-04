@@ -1,0 +1,67 @@
+/*
+HTML:
+<div class="triangleSplit">
+    <a href="">Awesome</a>
+</div>
+*/
+.triangleSplit {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background: #635B37;/*Remove this if you don't want a background*/
+}
+
+.triangleSplit a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+    padding: 5px 10px;/*Add your padding here if you want some space*/
+    transition: all 0.5s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.triangleSplit::before, .triangleSplit::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #333333;
+    transition: all 0.5s ease;
+    z-index: 0;/*Change this to 2 if you want the ::before ::after to slide over the text*/
+}
+
+.triangleSplit::before {
+    left: -10%;
+    top: 0;
+    width: 110%;
+    height: 100%;
+    transform: rotate(16.5deg);
+    transform-origin: 100% 100%;
+    background: #333333;
+}
+
+.triangleSplit::after {
+    left: 0;
+    top: 0;
+    width: 110%;
+    height: 100%;
+    transform: rotate(16.5deg);
+    transform-origin: 0% 0%;
+    background: #333333;
+}
+
+.triangleSplit:hover::before {
+    background: #333333;
+    left: 100%;
+    top: 110%;
+}
+
+.triangleSplit:hover::after {
+    background: #333333;
+    top: -110%;
+    left: -110%;
+}

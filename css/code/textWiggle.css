@@ -1,0 +1,41 @@
+/*
+HTML:
+<div class="textWiggle">
+    <a href="">Awesome</a>
+</div>
+*/
+.textWiggle {
+    position: relative;
+    background: ;/*Change the color of the background here*/
+    padding: ;/*Change the space around the text here*/
+}
+
+.textWiggle a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+}
+
+.textWiggle:hover a {
+    animation: textWiggle 1s ease;
+}
+
+@keyframes textWiggle {
+    7% {
+        transform: rotateZ(11deg);
+    }
+    14% {
+        transform: rotateZ(-11deg);
+    }
+    21% {
+        transform: rotateZ(11deg);
+    }
+    28% {
+        transform: rotateZ(-11deg);
+    }
+    35% {
+        transform: rotateZ(0deg);
+    }
+}

@@ -1,0 +1,52 @@
+/*
+HTML:
+<div class="borderSidesHorizontalSlide">
+    <a href="">Awesome</a>
+</div>
+*/
+.borderSidesHorizontalSlide {
+    position: relative;
+    background: ;/*Change the color of the background here*/
+    padding: ;/*Change the space around the text here*/
+}
+
+.borderSidesHorizontalSlide a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+}
+
+.borderSidesHorizontalSlide:before, .borderSidesHorizontalSlide:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 2px;/*Change the width of both border here*/
+    height: 100%;
+    background: #fff;/*Change the color of both border here*/
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: all 0.5s ease;/*Change the animation time and animation ease here*/
+            transition: all 0.5s ease;/*Change the animation time and animation ease here*/
+}
+
+.borderSidesHorizontalSlide:before {
+    left: -14px;/*Change the border start position here*/
+}
+
+.borderSidesHorizontalSlide:after {
+    right: -14px;/*Change the border start position here*/
+}
+
+.borderSidesHorizontalSlide:hover:before {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    left: -7px;/*Change the border end position here*/
+}
+
+.borderSidesHorizontalSlide:hover:after {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    right: -7px;/*Change the border end position here*/
+}

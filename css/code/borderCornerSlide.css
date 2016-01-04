@@ -1,0 +1,78 @@
+/*
+HTML:
+<div class="borderCornerSlide">
+    <div class="top"></div>
+    <a href="">Awesome</a>
+    <div class="bottom"></div>
+</div>
+*/
+.borderCornerSlide {
+    position: relative;
+    overflow: hidden;
+    padding: 0 7px 0 7px;
+    background: ;/*Change the color of the background here*/
+    padding: ;/*Change the space around the text here*/
+}
+
+.borderCornerSlide a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+}
+
+.borderCornerSlide .top, .borderCornerSlide .bottom {
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #fff;
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+}
+
+.borderCornerSlide .top {
+    top: 0;
+    right: 100%;
+}
+
+.borderCornerSlide .bottom {
+    bottom: 0;
+    left: 100%;
+}
+
+.borderCornerSlide:hover .top {
+    right: 0;
+}
+
+.borderCornerSlide:hover .bottom {
+    left: 0;
+}
+
+.borderCornerSlide:before, .borderCornerSlide:after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background: #fff;
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+}
+
+.borderCornerSlide:before {
+    bottom: 100%;
+    left: 0;
+}
+
+.borderCornerSlide:after {
+    top: 100%;
+    right: 0;
+}
+
+.borderCornerSlide:hover:before {
+    bottom: 0;
+}
+
+.borderCornerSlide:hover:after {
+    top: 0;
+}

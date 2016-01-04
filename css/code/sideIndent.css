@@ -1,0 +1,43 @@
+/*
+<div class="sideIndent">
+    <a href="">Awesome</a>
+</div>
+*/
+.sideIndent {
+    position: relative;
+    padding: 15px 20px;/*Change this to create space around the text*/
+    background-color: #333333;
+    transition: all 0.7s;  
+    -webkit-clip-path: polygon(
+        0% 0%,
+        50% 0%,
+        100% 0%,
+        100% 50%,
+        100% 100%,
+        50% 100%,
+        0% 100%,
+        0% 50%
+    );
+}
+
+.sideIndent a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+}
+
+.sideIndent:hover {
+      background-color: #635B37;
+      -webkit-clip-path: polygon(
+          10% 0%,
+          50% 20%,
+          90% 0%,
+          75% 50%,
+          90% 100%,
+          50% 80%,
+          10% 100%,
+          25% 50%
+      );
+}

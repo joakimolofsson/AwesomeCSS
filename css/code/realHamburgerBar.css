@@ -1,0 +1,251 @@
+/*
+HTML:
+<div class="realHamburgerBar">
+    <div id="topBread"></div>
+    <div id="lettuce"></div>
+    <div id="tomatoes"></div>
+    <div id="cheese"></div>
+    <div id="meat"></div>
+    <div id="botBread"></div>
+</div>
+
+JS:
+document.querySelector('.realHamburgerBar').addEventListener( "click", function() {
+    if(this.classList.contains('active')) {
+        this.classList.add('unActive');
+        this.classList.remove('active');
+    }
+    else if (this.classList.contains('active')) {
+        this.classList.add('active');
+        this.classList.remove('unActive');
+    }
+    else {
+        this.classList.add('active');
+        this.classList.remove('unActive');
+    }
+});
+*/
+.realHamburgerBar {
+    position: relative;
+    width: 55px;/*Change the width of the whole ham bar here*/
+    height: 50px;/*Change the height of the whole ham bar here*/
+    background-color: ;/*Add your color here if you want a background*/
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.realHamburgerBar #topBread, .realHamburgerBar #lettuce, .realHamburgerBar #tomatoes, .realHamburgerBar #cheese, .realHamburgerBar #meat, .realHamburgerBar #botBread {
+    position: absolute;
+    left: 0;
+    width: 100%;/*Change the width of the bars here*/
+    height: ;/*Change the height of all the bars here*/
+    background: ;/*Change the color of the bars here*/
+    border-radius: ;/*Smooth out the corners of the bars here*/
+}
+
+.realHamburgerBar #topBread {
+    top: 0;
+    height: 10px;
+    background: orange;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+.realHamburgerBar #lettuce {
+    top: 24%;
+    height: 3px;
+    background: green;
+}
+.realHamburgerBar #tomatoes {
+    top: 36%;
+    height: 4px;
+    background: red;
+}
+.realHamburgerBar #cheese {
+    top: 50%;
+    height: 3px;
+    background: yellow;
+}
+.realHamburgerBar #meat {
+    top: 61%;
+    height: 6px;
+    background: #4D2F10;
+}
+.realHamburgerBar #botBread {
+    bottom: 0;
+    height: 10px;
+    background: orange;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+/*---------ACTIVE---------*/
+/*Adds class .active. Turns the bars to a X. Click function in main.js*/
+.realHamburgerBar.active #topBread {
+    animation: activeTopBread 1s forwards;
+}
+@keyframes activeTopBread {
+    75% {
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 4px;
+    }
+    100% {
+        top: 42%;/*Adjust this if the bar in X form looks out of place*/
+        transform: rotate(-45deg) translateY(0);
+        border-radius: 4px;
+    }
+}
+.realHamburgerBar.active #lettuce {
+    animation: activeLettuce 1.5s forwards;
+}
+@keyframes activeLettuce {
+    10% {
+        left: -105%;
+    }
+    100% {
+        left: -105%;
+    }
+}
+.realHamburgerBar.active #tomatoes {
+    animation: activeTomatoes 1.5s forwards;
+}
+@keyframes activeTomatoes {
+    10% {
+        left: 0;
+    }
+    20% {
+        left: 105%;
+    }
+    100% {
+        left: 105%;
+    }
+}
+.realHamburgerBar.active #cheese {
+    animation: activeCheese 1.5s forwards;
+}
+@keyframes activeCheese {
+    10% {
+        left: 0;
+    }
+    20% {
+        left: -105%;
+    }
+    100% {
+        left: -105%;
+    }
+}
+.realHamburgerBar.active #meat {
+    animation: activeMeat 1.5s forwards;
+}
+@keyframes activeMeat {
+    10% {
+        left: 105%;
+    }
+    100% {
+        left: 105%;
+    }
+}
+.realHamburgerBar.active #botBread {
+    animation: activeBotBread 1s forwards;
+}
+@keyframes activeBotBread {
+    75% {
+        bottom: 50%;
+        transform: translateY(50%);
+        border-radius: 4px;
+    }
+    100% {
+        bottom: 41%;/*Adjust this if the bar in X form looks out of place*/
+        transform: rotate(45deg) translateY(0);
+        border-radius: 4px;
+    }
+}
+
+/*---------UNACTIVE---------*/
+/*Adds class .unActive. Turns the bars back. Click function in awesomecss.js*/
+.realHamburgerBar.unActive #topBread {
+    animation: unActiveTopBread 1s forwards;
+}
+@keyframes unActiveTopBread {
+    0% {
+        top: 42%;/*Adjust this if the bar in X form looks out of place*/
+        transform: rotate(-45deg) translateY(0);
+        border-radius: 4px;
+    }
+    25% {
+        top: 50%;
+        transform: rotate(0deg) translateY(-50%);
+        border-radius: 4px;
+    }
+}
+.realHamburgerBar.unActive #lettuce {
+    animation: unActiveLettuce 1.5s forwards;
+}
+@keyframes unActiveLettuce {
+    0% {
+        left: -105%;
+    }
+    45% {
+        left: -105%;
+    }
+    55% {
+        left: 0;
+    }
+}
+.realHamburgerBar.unActive #tomatoes {
+    animation: unActiveTomatoes 1.5s forwards;
+}
+@keyframes unActiveTomatoes {
+    0% {
+        left: 105%;
+    }
+    35% {
+        left: 105%;
+    }
+    45% {
+        left: 0;
+    }
+}
+.realHamburgerBar.unActive #cheese {
+    animation: unActiveCheese 1.5s forwards;
+}
+@keyframes unActiveCheese {
+    0% {
+        left: -105%;
+    }
+    35% {
+        left: -105%;
+    }
+    45% {
+        left: 0;
+    }
+}
+.realHamburgerBar.unActive #meat {
+    animation: unActiveMeat 1.5s forwards;
+}
+@keyframes unActiveMeat {
+    0% {
+        left: 105%;
+    }
+    45% {
+        left: 105%;
+    }
+    55% {
+        left: 0;
+    }
+}
+.realHamburgerBar.unActive #botBread {
+    animation: unActiveBotBread 1s forwards;
+}
+@keyframes unActiveBotBread {
+    0% {
+        bottom: 41%;/*Adjust this if the bar in X form looks out of place*/
+        transform: rotate(45deg) translateY(0);
+        border-radius: 4px;
+    }
+    25% {
+        bottom: 50%;
+        transform: rotate(0deg) translateY(50%);
+        border-radius: 4px;
+    }
+}

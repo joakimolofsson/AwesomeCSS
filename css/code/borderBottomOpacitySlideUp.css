@@ -1,0 +1,39 @@
+/*
+HTML:
+<div class="borderBottomOpacitySlideUp">
+    <a href="">Awesome</a>
+</div>
+*/
+.borderBottomOpacitySlideUp {
+    position: relative;
+    background: ;/*Change the color of the background here*/
+    padding: ;/*Change the space around the text here*/
+}
+
+.borderBottomOpacitySlideUp a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+}
+
+.borderBottomOpacitySlideUp:before {
+    content: '';
+    position: absolute;
+    bottom: -6px;/*Change the border start position here*/
+    left: 0;
+    width: 100%;
+    height: 2px;/*Change the height of the border here*/
+    background: #fff;/*Change the color of the border here*/
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: all 0.5s ease;/*Change the animation time and animation ease here*/
+            transition: all 0.5s ease;/*Change the animation time and animation ease here*/
+}
+
+.borderBottomOpacitySlideUp:hover:before {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    bottom: 0;/*Change the border end position here*/
+}

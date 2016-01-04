@@ -1,0 +1,52 @@
+/*
+HTML:
+<div class="textWiggleCrazy">
+    <a href="">Awesome</a>
+</div>
+*/
+.textWiggleCrazy {
+    position: relative;
+    perspective: 150px;
+    perspective-origin: 50% 50%;
+    background: ;/*Change the color of the background here*/
+    padding: ;/*Change the space around the text here*/
+}
+
+.textWiggleCrazy a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+}
+
+.textWiggleCrazy:hover a {
+    animation: textWiggleCrazy 0.5s infinite;
+}
+
+@keyframes textWiggleCrazy {
+    15% {
+        transform: rotateZ(10deg) rotateY(50deg) rotateX(50deg);
+        transform-origin: 0% 0%;
+    }
+    30% {
+        transform: rotateZ(-15deg) rotateY(-50deg) rotateX(-20deg);
+        transform-origin: 0% 100%;
+    }
+    50% {
+        transform: rotateZ(10deg) rotateY(50deg) rotateX(20deg);
+        transform-origin: 50% 50%;
+    }
+    60% {
+        transform: rotateZ(-5deg) rotateY(50deg) rotateX(10deg);
+        transform-origin: 100% 0%;
+    }
+    75% {
+        transform: rotateZ(15deg) rotateY(-50deg) rotateX(-50deg);
+        transform-origin: 30% 60%;
+    }
+    90% {
+        transform: rotateZ(5deg) rotateY(-20deg) rotateX(-20deg);
+        transform-origin: 70% 80%;
+    }
+}

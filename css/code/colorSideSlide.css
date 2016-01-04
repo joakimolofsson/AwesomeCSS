@@ -1,0 +1,43 @@
+/*
+HTML:
+<div class="colorSideSlide">
+    <a href="">Awesome</a>
+</div>
+*/
+.colorSideSlide {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background: #333333;/*Remove this if you don't want a background*/
+}
+
+.colorSideSlide a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+    padding: 5px 10px;/*Add your padding here if you want some space around the text*/
+    transition: all 0.5s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.colorSideSlide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #635B37;/*Add your color here if you want a background*/
+    transition: all 0.7s ease;
+    z-index: 0;/*Change this to 2 if you want the ::before to slide over the text*/
+}
+
+.colorSideSlide::before {
+    left: -100%;/*Change this to 100% if you want ::before to slide in from the right*/
+}
+
+.colorSideSlide:hover::before {
+    left: 0%;
+}

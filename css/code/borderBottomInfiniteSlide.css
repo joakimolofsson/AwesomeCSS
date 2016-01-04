@@ -1,0 +1,57 @@
+/*
+HTML:
+<div class="borderBottomInfiniteSlide">
+    <a href="">Awesome</a>
+</div>
+*/
+.borderBottomInfiniteSlide {
+    position: relative;
+    overflow: hidden;
+    background: ;/*Change the color of the background here*/
+    padding: ;/*Change the space around the text here*/
+}
+
+.borderBottomInfiniteSlide a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+}
+
+.borderBottomInfiniteSlide:before {
+    content: '';
+    position: absolute;
+    left: -100%;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: #fff;
+}
+
+.borderBottomInfiniteSlide:hover:before {
+    -webkit-animation: borderBottomInfiniteSlide 1s ease-in-out infinite;
+            animation: borderBottomInfiniteSlide 1s ease-in-out infinite;
+}
+@-webkit-keyframes borderBottomInfiniteSlide {
+    80% {
+        left: 100%
+    }
+    80.1% {
+        left: -100%; 
+    }
+    100% {
+        left: -100%
+    }
+}
+@keyframes borderBottomInfiniteSlide {
+    80% {
+        left: 100%
+    }
+    80.1% {
+        left: -100%; 
+    }
+    100% {
+        left: -100%
+    }
+}

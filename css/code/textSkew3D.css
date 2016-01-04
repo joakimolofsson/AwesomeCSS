@@ -1,0 +1,27 @@
+/*
+HTML:
+<div class="textSkew3D">
+    <a href="">Awesome</a>
+</div>
+*/
+.textSkew3D {
+    position: relative;
+    perspective: 100px;
+    perspective-origin: 0% 50%;
+    background: ;/*Change the color of the background here*/
+    padding: ;/*Change the space around the text here*/
+}
+
+.textSkew3D a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+    transition: all 0.5s ease;
+    transform-origin: 50% 45%;
+}
+
+.textSkew3D:hover a {
+    transform: rotateZ(-9deg) rotateX(-350deg) rotateY(10deg);
+}

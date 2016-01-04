@@ -1,0 +1,25 @@
+/*
+HTML:
+<div class="textRotateY">
+    <a href="">Awesome</a>
+</div>
+*/
+.textRotateY {
+    position: relative;
+    perspective: 130px;
+    background: ;/*Change the color of the background here*/
+    padding: ;/*Change the space around the text here*/
+}
+
+.textRotateY a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+    transition: all 1s;
+}
+
+.textRotateY:hover a {
+    transform: rotateY(360deg);
+}

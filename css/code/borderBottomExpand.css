@@ -1,0 +1,61 @@
+/*
+HTML:
+<div class="borderBottomExpand">
+    <a href="">Awesome</a>
+</div>
+*/
+.borderBottomExpand {
+    width: auto;
+    height: auto;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background: ;/*Change the color of the background here*/
+    padding: ;/*Change the space around the text here*/
+}
+
+.borderBottomExpand a {
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+    display: block;
+    line-height: 28px;
+}
+
+.borderBottomExpand:before, .borderBottomExpand:after {
+    content: '';
+    width: 50%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    background: #fff;
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+}
+
+.borderBottomExpand:before {
+    left: 0;
+    -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: right;
+        -ms-transform-origin: right;
+            transform-origin: right;
+}
+
+.borderBottomExpand:after {
+    right: 1px;
+    -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: left;
+        -ms-transform-origin: left;
+            transform-origin: left;
+}
+
+.borderBottomExpand:hover:before, .borderBottomExpand:hover:after  {
+    -webkit-transform: scaleX(1.1);
+        -ms-transform: scaleX(1.1);
+            transform: scaleX(1.1);
+}

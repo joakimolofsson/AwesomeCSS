@@ -1,0 +1,110 @@
+/*
+HTML:
+<div class="borderLazers">
+    <div class="top"></div>
+    <a href="">Awesome</a>
+    <div class="bottom"></div>
+</div>
+*/
+.borderLazers {
+    position: relative;
+    overflow: hidden;
+    padding: 0 7px 0 7px;
+}
+
+.borderLazers a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+}
+
+.borderLazers .top, .borderLazers .bottom, .borderLazers:before, .borderLazers:after {
+    position: absolute;
+    background: #fff;
+}
+
+.borderLazers .top, .borderLazers .bottom {
+    height: 2px;
+    width: 100%;
+}
+.borderLazers:before, .borderLazers:after {
+    content: '';
+    height: 100%;
+    width: 2px;
+}
+
+.borderLazers .top {
+    top: 0;
+    left: 100%;
+}
+.borderLazers .bottom {
+    bottom: 0;
+    right: 100%;
+}
+.borderLazers:before {
+    top: -100%;
+    left: 0;
+}
+.borderLazers:after {
+    bottom: -100%;
+    right: 0;
+}
+
+.borderLazers:hover .bottom {
+    -webkit-animation: borderLazersBottom 0.7s infinite;
+            animation: borderLazersBottom 0.7s infinite;
+}
+@-webkit-keyframes borderLazersBottom {
+    100% {
+        right: -100%;
+    }
+}
+@keyframes borderLazersBottom {
+    100% {
+        right: -100%;
+    }
+}
+.borderLazers:hover:after {
+    -webkit-animation: borderLazersAfter 0.7s infinite;
+            animation: borderLazersAfter 0.7s infinite;
+}
+@-webkit-keyframes borderLazersAfter {
+    100% {
+        bottom: 100%;
+    }
+}
+@keyframes borderLazersAfter {
+    100% {
+        bottom: 100%;
+    }
+}
+.borderLazers:hover .top {
+    -webkit-animation: borderLazersTop 0.7s infinite;
+            animation: borderLazersTop 0.7s infinite;
+}
+@-webkit-keyframes borderLazersTop {
+    100% {
+        left: -100%;
+    }
+}
+@keyframes borderLazersTop {
+    100% {
+        left: -100%;
+    }
+}
+.borderLazers:hover:before {
+    -webkit-animation: borderLazersBefore 0.7s infinite;
+            animation: borderLazersBefore 0.7s infinite;
+}
+@-webkit-keyframes borderLazersBefore {
+    100% {
+        top: 100%;
+    }
+}
+@keyframes borderLazersBefore {
+    100% {
+        top: 100%;
+    }
+}

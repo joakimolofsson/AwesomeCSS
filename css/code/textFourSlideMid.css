@@ -1,0 +1,93 @@
+/*
+HTML:
+<div class="textFourSlideMid">
+    <a id="one" href="">Awesome</a>
+    <a id="two" href="">Awesome</a>
+    <a id="three" href="">Awesome</a>
+    <a id="four" href="">Awesome</a>
+    <a id="five" href="">Awesome</a>
+</div>
+*/
+.textFourSlideMid {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background: ;/*Change the color of the background here*/
+    padding: ;/*Change the space around the text here*/
+}
+
+.textFourSlideMid a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: rgba(255,255,255, 0.3);/*Remove the rgba if you don't want the text to have some opacity*/
+    padding: 10px 15px;/*Add your padding here if you want some space around your text*/
+}
+
+.textFourSlideMid #one {
+}
+
+.textFourSlideMid #two, #three, #four, #five {
+    position: absolute;
+}
+
+.textFourSlideMid #two {
+    top: 0;
+    left: 100%;
+}
+
+.textFourSlideMid #three {
+    top: 100%;
+    left: 0;
+}
+
+.textFourSlideMid #four {
+    top: 0;
+    left: -100%;
+}
+
+.textFourSlideMid #five {
+    top: -100%;
+    left: 0;
+}
+
+.textFourSlideMid:hover #two {
+    -webkit-animation: slideTwo 0.5s;
+    -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes slideTwo {
+    100% {
+       left: 0; 
+    }
+}
+
+.textFourSlideMid:hover #three{
+    -webkit-animation: slidethree 0.5s;
+    -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes slidethree {
+    100% {
+       top: 0; 
+    }
+}
+
+.textFourSlideMid:hover #four {
+    -webkit-animation: slidefour 0.5s;
+    -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes slidefour {
+    100% {
+       left: 0; 
+    }
+}
+
+.textFourSlideMid:hover #five {
+    -webkit-animation: slidefive 0.5s;
+    -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes slidefive {
+    100% {
+       top: 0; 
+    }
+}

@@ -1,0 +1,48 @@
+/*
+HTML:
+<div class="borderLeftRightSlideUpDown">
+    <a href="">Awesome</a>
+</div>
+*/
+.borderLeftRightSlideUpDown {
+    position: relative;
+    overflow: hidden;
+    padding: 0 7px 0 7px;/*Change the space around the text here*/
+    background: ;/*Change the color of the background here*/
+}
+
+.borderLeftRightSlideUpDown a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+}
+
+.borderLeftRightSlideUpDown:before, .borderLeftRightSlideUpDown:after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background: #fff;
+    -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+}
+
+.borderLeftRightSlideUpDown:before {
+    bottom: 100%;
+    left: 0;
+}
+
+.borderLeftRightSlideUpDown:after {
+    top: 100%;
+    right: 0;
+}
+
+.borderLeftRightSlideUpDown:hover:before {
+    bottom: 0;
+}
+
+.borderLeftRightSlideUpDown:hover:after {
+    top: 0;
+}

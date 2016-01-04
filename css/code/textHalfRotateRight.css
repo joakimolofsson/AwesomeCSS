@@ -1,0 +1,26 @@
+/*
+HTML:
+<div class="textHalfRotateRight">
+    <a href="">Awesome</a>
+</div>
+*/
+.textHalfRotateRight {
+    position: relative;
+    perspective: 150px;
+    perspective-origin: 10% 40%;
+    background: ;/*Change the color of the background here*/
+    padding: ;/*Change the space around the text here*/
+}
+
+.textHalfRotateRight a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+    transition: all 0.3s ease;
+}
+
+.textHalfRotateRight:hover a {
+    transform: rotateY(35deg);
+}

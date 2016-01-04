@@ -1,0 +1,53 @@
+/*
+HTML:
+<div class="splitSlideApartOver">
+    <a href="">Awesome</a>
+</div>
+*/
+.splitSlideApartOver {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background: #4D4D4D;/*Remove this if you don't want a background*/
+}
+
+.splitSlideApartOver a {
+    display: block;
+    text-decoration: none;
+    font-size: 25px;/*Change the text size here*/
+    font-family: sans-serif;
+    color: #fff;/*Change the text color here*/
+    padding: 5px 10px;/*Add your padding here if you want some space*/
+    transition: all 0.5s ease;
+}
+
+.splitSlideApartOver::before, .splitSlideApartOver::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    transition: all 0.5s ease;
+    z-index: 1;
+}
+
+.splitSlideApartOver::before {
+    left: 0%;
+}
+
+.splitSlideApartOver::after {
+    left: 50%;
+}
+
+.splitSlideApartOver:hover a {
+    transform:scale(1.1);
+}
+
+.splitSlideApartOver:hover::before {
+    left: -50%;
+}
+
+.splitSlideApartOver:hover::after {
+    left: 100%;
+}
