@@ -2664,7 +2664,7 @@ document.querySelector('.realHamburgerBar').addEventListener( "click", function(
     }
     100% {
         bottom: 41%;/*Adjust this if the bar in X form looks out of place*/
-        transform: rotate(45deg) translateY(0);
+        transform: rotate(45deg) translateY(12%) translateX(2%);
         border-radius: 4px;
     }
 }
